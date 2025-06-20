@@ -7,6 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 import pandas as pd 
 import logging as log
 from config import XPATHS
+from config import CHROME_OPTIONS
 from config import FALLBACKXPATHS
 
 
@@ -17,11 +18,14 @@ log.basicConfig(level=log.INFO, format='%(asctime)s - %(levelname)s - %(message)
 def initialize_driver():
     try:
         options = webdriver.ChromeOptions()
-        options = webdriver.ChromeOptions()
-        options.add_argument('--disable-blink-lvl_features=AutomationControlled')
-        options.add_argument(
-            '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36')
-        options.add_argument('--headless=new')
+        options.add_argument(CHROME_OPTIONS["disable_automation_flag"])
+        log.info("Automation flag disabled.")
+
+        options.add_argument(CHROME_OPTIONS["custom_user_agent"])
+        log.info("User agent customized.")
+        
+        options.add_argument(CHROME_OPTIONS["headless_mode"])
+        log.info("Headless mode activated.")
         driver = webdriver.Chrome(options=options)
         return driver
     except Exception as e:
