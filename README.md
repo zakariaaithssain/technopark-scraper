@@ -7,6 +7,11 @@
 
 This project is a web scraper built with Selenium to extract all startup details from the **Technopark Morocco "Startup of the Month"** webpage: 
 https://www.technopark.ma/start-ups-du-mois/
+
+## 📩 Content Removal Requests
+
+If you have a problem with any content included in this scraper and would like it to be removed,  
+please contact me at [zakaria04aithssain@gmai.com], and I will address it as soon as possible.
 ---
 
 
@@ -46,14 +51,6 @@ You may use, share, and modify this project for non-commercial purposes only.
 
 Read more: https://creativecommons.org/licenses/by-nc/4.0/
 See the LICENSE file.
-
-
-
-## 📩 Content Removal Requests
-
-If you have a problem with any content included in this scraper and would like it to be removed,  
-please contact me at [zakaria04aithssain@gmai.com], and I will address it as soon as possible.
-
 
 
 
