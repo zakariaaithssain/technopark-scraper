@@ -4,33 +4,40 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 import pandas as pd 
 import logging as log
 from config import XPATHS
 from config import CHROME_OPTIONS
 from config import FALLBACKXPATHS
+import os
 
 
 technopark_url = "https://www.technopark.ma/start-ups-du-mois/"
-log.basicConfig(level=log.INFO, format='%(asctime)s - %(levelname)s - %(message)s', filename='scraper.log')
+log.basicConfig(level=log.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
+                handlers=[
+                            log.FileHandler("scraper.log"),
+                            log.StreamHandler()  # shows logs in terminal
+                            ]
+                )
 
 #webdriver setups
 def initialize_driver():
-    try:
-        options = webdriver.ChromeOptions()
-        options.add_argument(CHROME_OPTIONS["disable_automation_flag"])
-        log.info("Automation flag disabled.")
-
-        options.add_argument(CHROME_OPTIONS["custom_user_agent"])
-        log.info("User agent customized.")
-        
-        options.add_argument(CHROME_OPTIONS["headless_mode"])
-        log.info("Headless mode activated.")
-        driver = webdriver.Chrome(options=options)
-        return driver
-    except Exception as e:
-        log.error(f"Failed to initialize the webdriver, exception: {e}")
+    chrome_options = Options()
+    log.info("Initializing the webdriver...")
+    for key, value in CHROME_OPTIONS.items():
+        if key.startswith("exclude_automation") or key.startswith("disable_automation"):
+            # Handle experimental options (tuples)
+            option_name, option_value = value
+            chrome_options.add_experimental_option(option_name, option_value)
+            log.info(f"'{option_name}' experimental option added to driver.")
+        else:
+            # Handle regular arguments (strings)
+            chrome_options.add_argument(value)
+            log.info(f"'{key}' argument added to driver.")
     
+    return webdriver.Chrome(options=chrome_options)
 
 
 def count_page_startups(wait):

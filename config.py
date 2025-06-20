@@ -17,10 +17,25 @@ FALLBACKXPATHS  = {"name" : None,
 
 
 CHROME_OPTIONS = {
-    # Avoid Selenium detection
-    "disable_automation_flag": "--disable-blink-lvl_features=AutomationControlled",  
-     # Custom browser identity
-    "custom_user_agent": "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36", 
-    # Run driver without GUI (with the last version of headless mode)
-    "headless_mode": "--headless=new"  
+
+     # Disable features causing the TensorFlow errors
+    "disable_viz_display_compositor": "--disable-features=VizDisplayCompositor",
+    "disable_audio_service_out_of_process": "--disable-features=AudioServiceOutOfProcess", 
+    "disable_speech_recognition": "--disable-speech-api",
+    "disable_background_networking": "--disable-background-networking",
+    
+    # More performance optimizations
+    "disable_sandbox": "--no-sandbox",
+    "disable_gpu_acceleration": "--disable-gpu",
+    "disable_browser_extensions": "--disable-extensions",
+    "disable_browser_plugins": "--disable-plugins",
+    "disable_image_loading": "--disable-images",
+    
+    # Headless Mode
+    "run_headless_mode": "--headless",
+    
+    # Disable automation detection
+    "exclude_automation_switches": ("excludeSwitches", ["enable-automation"]),
+    "disable_automation_extension": ("useAutomationExtension", False)
 }
+
