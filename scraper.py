@@ -10,10 +10,11 @@ from config import XPATHS
 from config import CHROME_OPTIONS
 from config import FALLBACKXPATHS
 import os 
-
-# YOU STILL NEED TO SCRAPE THE URLS OF STARTUPS  
+import re
+ 
 
 technopark_url = "https://www.technopark.ma/start-ups-du-mois/"
+
 log.basicConfig(level=log.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
                 handlers=[
                             log.FileHandler("scraper.log", mode='w'),
@@ -21,55 +22,35 @@ log.basicConfig(level=log.INFO, format='%(asctime)s - %(levelname)s - %(message)
                             ]
                 )
 
-#webdriver setups
+
 def initialize_driver():
-    """
-    Maximum performance configuration with headless mode
-    Use this if you don't need to see the browser window
-    """
+    
     os.environ['CHROME_LOG_FILE'] = 'NUL'
     
     chrome_options = Options()
-    
-    # All performance options from above PLUS:
-    chrome_options.add_argument('--headless')  # MAJOR performance boost
-    chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument('--disable-software-rasterizer')
-    chrome_options.add_argument('--disable-background-timer-throttling')
-    chrome_options.add_argument('--disable-backgrounding-occluded-windows')
-    chrome_options.add_argument('--disable-renderer-backgrounding')
-    chrome_options.add_argument('--disable-features=TranslateUI,VoiceInteraction,OptimizationHints')
-    chrome_options.add_argument('--disable-component-extensions-with-background-pages')
-    chrome_options.add_argument('--disable-ipc-flooding-protection')
-    chrome_options.add_argument('--disable-hang-monitor')
-    chrome_options.add_argument('--disable-prompt-on-repost')
-    chrome_options.add_argument('--disable-domain-reliability')
-    chrome_options.add_argument('--disable-background-networking')
-    chrome_options.add_argument('--memory-pressure-off')
-    chrome_options.add_argument('--aggressive-cache-discard')
-    chrome_options.add_argument('--log-level=3')
-    chrome_options.add_argument('--silent')
-    chrome_options.add_argument('--disable-logging')
-    chrome_options.add_argument('--ignore-ssl-errors')
-    chrome_options.add_argument('--ignore-certificate-errors')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    
-    # Headless-specific optimizations
-    chrome_options.add_argument('--disable-extensions')
-    chrome_options.add_argument('--disable-plugins')
-    chrome_options.add_argument('--disable-images')  # Don't load images (faster)
-    chrome_options.add_argument('--disable-javascript')  # Only if your scraping doesn't need JS
-    
     service = Service()
     service.log_path = 'NUL'
     
     log.getLogger('selenium').setLevel(log.CRITICAL)
     log.getLogger('urllib3').setLevel(log.CRITICAL)
+
+    for key, value in CHROME_OPTIONS.items():
+        if isinstance(value, tuple):
+            # Handle special cases like excludeSwitches
+            method_name, method_value = value
+            if method_name == "excludeSwitches":
+                chrome_options.add_experimental_option("excludeSwitches", method_value)
+            elif method_name == "useAutomationExtension":
+                chrome_options.add_experimental_option("useAutomationExtension", method_value)
+        else:
+            # Regular arguments
+            chrome_options.add_argument(value)
+
     
     driver = webdriver.Chrome(service=service, options=chrome_options)
     driver.set_page_load_timeout(20)  # Shorter timeout for faster failures
     wait = WebDriverWait(driver, 10)
+    driver.set_page_load_timeout(10)
 
     return driver, wait
 
@@ -177,3 +158,83 @@ def click_startup_website_icon(driver, wait):
     
     else: return False
 
+
+
+def get_startup_contact_info(driver):
+    # Regular expressions for pattern matching
+    phone_pattern = r'(?:\+?1[-.\s]?)?\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})'
+    email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+    
+
+    result = {
+        'phones': set(),
+        'emails': set(),
+        'addresses': set()
+    }
+    page_source = driver.page_source
+        
+    # Also get visible text
+    body_text = driver.find_element(By.TAG_NAME, "body").text
+    
+    # Combine both sources for comprehensive search
+    combined_text = page_source + " " + body_text
+    
+    # Extract phone numbers
+    phone_matches = re.findall(phone_pattern, combined_text)
+    for match in phone_matches:
+        if isinstance(match, tuple):
+            phone = f"({match[0]}) {match[1]}-{match[2]}"
+        else:
+            phone = match
+        result['phones'].add(phone)
+    
+    # Also look for other phone formats
+    other_phone_patterns = [
+        r'(?:\+?1[-.\s]?)?(?:\(?[0-9]{3}\)?[-.\s]?)?[0-9]{3}[-.\s]?[0-9]{4}',
+        r'\+?1?[-.\s]?\(?[0-9]{3}\)?[-.\s]?[0-9]{3}[-.\s]?[0-9]{4}',
+    ]
+    
+    for pattern in other_phone_patterns:
+        phones = re.findall(pattern, combined_text)
+        for phone in phones:
+            # Clean up the phone number
+            clean_phone = re.sub(r'[^\d+]', '', phone)
+            if 10 <= len(clean_phone) <= 12:  # Valid phone length
+                result['phones'].add(phone)
+    
+    # Extract email addresses
+    emails = re.findall(email_pattern, combined_text)
+    result['emails'].update(emails)
+    
+    # Extract addresses
+    try:
+        addresses = driver.find_element(By.TAG_NAME, "Adresse").text.strip()
+        result['addresses'].update(addresses)
+
+        addresses2 = driver.find_element(By.TAG_NAME, "adresse").text.strip()
+        result['addresses'].update(addresses2)
+
+        # Look for common address indicators in structured data
+        address_elements = driver.find_elements(By.CSS_SELECTOR, 
+            "[class*='address'], [class*='location'], [id*='address'], [id*='location']")
+        
+        for element in address_elements:
+            text = element.text.strip()
+            if text and len(text) > 10:  # Basic filter for meaningful addresses
+                result['addresses'].add(text)
+    
+        
+    except NoSuchElementException: pass
+
+    
+    # Convert sets to lists for JSON serialization
+    result['phones'] = list(result['phones'])
+    result['emails'] = list(result['emails'])
+    result['addresses'] = list(result['addresses'])
+    
+    # Clean up results - remove empty strings and duplicates
+    result['phones'] = [p for p in result['phones'] if p.strip()]
+    result['emails'] = [e for e in result['emails'] if e.strip()]
+    result['addresses'] = [a for a in result['addresses'] if a.strip()]
+
+    return result

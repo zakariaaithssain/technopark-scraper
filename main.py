@@ -2,6 +2,8 @@ from scraper import *
 from kamikaze import kamikaze
 import pandas as pd
 
+
+
 def run_scraping():
     driver, wait = initialize_driver()
     try:
@@ -24,9 +26,8 @@ def run_scraping():
                     click_startup_link(driver, startup_link)
                     startup_details = get_startup_details(driver)  # this calls driver.back() at the end, forcing us to the 1st page each time.
 
-                    startup_website = kamikaze(current_page, n_startup)
-                    startup_details["website"] = startup_website
-                    print(startup_website)
+                    kamikaze_mission = kamikaze(current_page, n_startup)
+                    startup_details.update(kamikaze_mission)
 
                     data.append(startup_details)
                     log.info(f'Added "{startup_details["name"]}".')
@@ -61,65 +62,6 @@ def run_scraping():
 
     return data
 
-
-def run_scraping_1():
-    driver, wait = initialize_driver()
-    try:
-     driver.get(technopark_url)
-    except Exception as e: 
-        log.error(f"Failed to get: {technopark_url} \nException: {e}")
-
-    n_pages = 0
-    data = []
-    navigated = True #just to start the loop.
-
-    try:
-        while navigated:
-            
-            try:
-                n_startups_in_page = count_page_startups(wait)
-                log.info(f"\n The number of startups found in page {n_pages + 1} is: {n_startups_in_page} ")
-
-                for n_startup in range(n_startups_in_page):
-                    #we should get the links each time because of the StaleElementReferenceException.
-                    page_links = get_page_startups_links(wait)
-                    startup_link = page_links[n_startup]
-                    click_startup_link(driver, startup_link)
-                    startup_details = get_startup_details(driver) #this calls driver.back() at the end, forcing us to the 1st page each time.
-
-                    startup_website = kamikaze(n_pages, n_startup)
-                    startup_details["website"] = startup_website
-                    print(startup_website)
-
-                    data.append(startup_details)
-                    log.info(f'Added "{startup_details["name"]}".')
-                    
-                    #this loop enables us to go back to the page we are fetching as the driver.back() takes us to the very 1st page each time.
-                    for _ in range(n_pages): 
-                        #this will be false when the triangle button is no longer clickable ( we reached the final page, thus stop the loop).
-                        navigated = click_the_triangle_button(driver, wait)
-                
-                #we are done with one page.  
-                n_pages +=1
-
-    #for pages that might not contain the expected the number of startups, this error is expected from the bigger 'for' loop.
-            except IndexError: 
-                navigated = click_the_triangle_button(driver, wait)
-                continue
-        else:
-            log.info("\n SCRAPING FINISHED SUCCESSFULLY!")
-
-
-    except KeyboardInterrupt:
-        log.warning(" Process interrupted manually!")
-
-    finally:
-        driver.quit()
-
-    data_without_duplicates = [dict(t) for t in set(tuple(sorted(d.items())) for d in data)]
-    log.info(f"Number of unique startups: { len(data_without_duplicates)}")
-
-    return data
 
 
 def save_data(data):
