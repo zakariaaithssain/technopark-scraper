@@ -1,43 +1,77 @@
 from selenium import webdriver
-from selenium.common import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-import pandas as pd 
 import logging as log
 from config import XPATHS
 from config import CHROME_OPTIONS
 from config import FALLBACKXPATHS
-import os
+import os 
 
+# YOU STILL NEED TO SCRAPE THE URLS OF STARTUPS  
 
 technopark_url = "https://www.technopark.ma/start-ups-du-mois/"
 log.basicConfig(level=log.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
                 handlers=[
-                            log.FileHandler("scraper.log"),
+                            log.FileHandler("scraper.log", mode='w'),
                             log.StreamHandler()  # shows logs in terminal
                             ]
                 )
 
 #webdriver setups
 def initialize_driver():
-    chrome_options = Options()
-    log.info("Initializing the webdriver...")
-    for key, value in CHROME_OPTIONS.items():
-        if key.startswith("exclude_automation") or key.startswith("disable_automation"):
-            # Handle experimental options (tuples)
-            option_name, option_value = value
-            chrome_options.add_experimental_option(option_name, option_value)
-            log.info(f"'{option_name}' experimental option added to driver.")
-        else:
-            # Handle regular arguments (strings)
-            chrome_options.add_argument(value)
-            log.info(f"'{key}' argument added to driver.")
+    """
+    Maximum performance configuration with headless mode
+    Use this if you don't need to see the browser window
+    """
+    os.environ['CHROME_LOG_FILE'] = 'NUL'
     
-    return webdriver.Chrome(options=chrome_options)
+    chrome_options = Options()
+    
+    # All performance options from above PLUS:
+    chrome_options.add_argument('--headless')  # MAJOR performance boost
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--disable-software-rasterizer')
+    chrome_options.add_argument('--disable-background-timer-throttling')
+    chrome_options.add_argument('--disable-backgrounding-occluded-windows')
+    chrome_options.add_argument('--disable-renderer-backgrounding')
+    chrome_options.add_argument('--disable-features=TranslateUI,VoiceInteraction,OptimizationHints')
+    chrome_options.add_argument('--disable-component-extensions-with-background-pages')
+    chrome_options.add_argument('--disable-ipc-flooding-protection')
+    chrome_options.add_argument('--disable-hang-monitor')
+    chrome_options.add_argument('--disable-prompt-on-repost')
+    chrome_options.add_argument('--disable-domain-reliability')
+    chrome_options.add_argument('--disable-background-networking')
+    chrome_options.add_argument('--memory-pressure-off')
+    chrome_options.add_argument('--aggressive-cache-discard')
+    chrome_options.add_argument('--log-level=3')
+    chrome_options.add_argument('--silent')
+    chrome_options.add_argument('--disable-logging')
+    chrome_options.add_argument('--ignore-ssl-errors')
+    chrome_options.add_argument('--ignore-certificate-errors')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    
+    # Headless-specific optimizations
+    chrome_options.add_argument('--disable-extensions')
+    chrome_options.add_argument('--disable-plugins')
+    chrome_options.add_argument('--disable-images')  # Don't load images (faster)
+    chrome_options.add_argument('--disable-javascript')  # Only if your scraping doesn't need JS
+    
+    service = Service()
+    service.log_path = 'NUL'
+    
+    log.getLogger('selenium').setLevel(log.CRITICAL)
+    log.getLogger('urllib3').setLevel(log.CRITICAL)
+    
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver.set_page_load_timeout(20)  # Shorter timeout for faster failures
+    wait = WebDriverWait(driver, 10)
+
+    return driver, wait
 
 
 def count_page_startups(wait):
@@ -88,19 +122,16 @@ def get_startup_details(driver):
 
             "city": _get_text(driver, XPATHS["city"], FALLBACKXPATHS["city"]),
 
-            "description": _get_text(driver, XPATHS["description"],FALLBACKXPATHS["description"]),
+            "description": _get_text(driver, XPATHS["description"],FALLBACKXPATHS["description"])
         }
-        
+
         return startup_details
         
     except Exception as e:
         log.error(f"\nError processing current startup, exception: {e}")
         return {}
     
-    finally: #this is used to go back from the startup details to the page containing the rest of startups.
-        driver.back() 
-
-
+    finally: driver.back()
 
 
 # to be called only inside the get_startup_details
@@ -118,7 +149,6 @@ def _get_text(driver, xpath, fallback_xpaths=None):
 
 
 
-
 def click_the_triangle_button(driver, wait):
     #We will click the '>' like button to show the next pages numbers buttons.
     try:
@@ -130,83 +160,20 @@ def click_the_triangle_button(driver, wait):
         
         else: return False
 
-    except NoSuchElementException:
+    except (NoSuchElementException, TimeoutException):
         log.warning("The triangle button is not found in current page!")
         return False
+
+
     
-
-
-
-
-
-def run_scraping():
-    driver = initialize_driver()
-    try:
-     driver.get(technopark_url)
-    except Exception as e: 
-        log.error(f"Failed to get: {technopark_url} \nException: {e}")
-
-    wait = WebDriverWait(driver, 10)
-    n_pages = 0
-    data = []
-    navigated = True #just to start the loop.
-
-    try:
-        while navigated:
-            
-            try:
-                n_startups_in_page = count_page_startups(wait)
-                log.info(f"\n The number of startups found in page {n_pages + 1} is: {n_startups_in_page} ")
-
-                for n_startup in range(n_startups_in_page):
-                    #we should get the links each time because of the StaleElementReferenceException.
-                    page_links = get_page_startups_links(wait)
-                    startup_link = page_links[n_startup]
-                    click_startup_link(driver, startup_link)
-                    startup_details = get_startup_details(driver) #this calls driver.back() at the end, forcing us to the 1st page each time.
-                    data.append(startup_details)
-                    log.info(f'Added "{startup_details["name"]}".')
-                    
-                    #this loop enables us to go back to the page we are fetching as the driver.back() takes us to the very 1st page each time.
-                    for n_page in range(n_pages): 
-                        #this will be false when the triangle button is no longer clickable ( we reached the final page, thus stop the loop).
-                        navigated = click_the_triangle_button(driver, wait)
-                
-                #we are done with one page.  
-                n_pages +=1
-
-    #for pages that might not contain the expected the number of startups, this error is expected from the bigger 'for' loop.
-            except IndexError: 
-                navigated = click_the_triangle_button(driver, wait)
-                continue
-        else:
-            log.info("\n SCRAPING FINISHED SUCCESSFULLY!")
-
-
-    except KeyboardInterrupt:
-        log.warning(" Process interrupted manually!")
-
-    finally:
-        driver.quit()
-
-    data_without_duplicates = [dict(t) for t in set(tuple(sorted(d.items())) for d in data)]
-    log.info(f"Number of unique startups: { len(data_without_duplicates)}")
-
-    return data
-
-
-def save_data(data):
-    try:
-        df = pd.DataFrame(data= data, columns=["name", "sector", "technologies", "city", "description"])
-        df.to_json(path_or_buf= "data/technopark_startups.json", orient= "records")
-        log.info("Data saved successfully!")
-    except Exception as e:
-        log.error(f"Enable to save data, because of the following exception: {e}")
+def click_startup_website_icon(driver, wait):
+        #wait for and find the website's button
+    wait.until(EC.presence_of_element_located((By.XPATH, XPATHS["websites_button"])))
+    website_button = driver.find_element(By.XPATH, XPATHS["websites_button"])
     
-
-data = run_scraping()
-save_data(data)
-
-
-
+    if website_button.is_displayed() and website_button.is_enabled(): 
+        driver.execute_script("arguments[0].click();", website_button)
+        return True
+    
+    else: return False
 

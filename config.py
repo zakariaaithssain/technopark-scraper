@@ -6,7 +6,8 @@ XPATHS = {
     "sector": "//div[2]/div[2]/p",
     "technologies": "//div[2]/div[3]/p",
     "city": "//div[2]/div[4]/p",
-    "description": "//div[2]/div[5]//p"
+    "description": "//div[2]/div[5]//p",
+    "websites_button" : '//*[@id="root"]/div/div/div/div/div/div[1]/div[2]/button[3]'
 }
 
 FALLBACKXPATHS  = {"name" : None, 
@@ -17,6 +18,9 @@ FALLBACKXPATHS  = {"name" : None,
 
 
 CHROME_OPTIONS = {
+
+    #the interpreter told me to enable this option because of some deprecation error
+    "an_error_i_dont_know" : "--enable-unsafe-swiftshader",
 
      # Disable features causing the TensorFlow errors
     "disable_viz_display_compositor": "--disable-features=VizDisplayCompositor",
