@@ -70,11 +70,11 @@ class Scraper(BaseScraper):
                         startup_link = page_links[n_startup]
                         self._click_startup_link(startup_link)
                         startup_details = self._get_startup_details()  # this calls driver.back() at the end, forcing us to the 1st page each time.
-                        #ayo launch the kamikaze mission: ain't no idea how excited I feel abt this for no reason.
+
+                        #ayo launch the kamikaze mission: I always feel excited abt this for no reason.
                         kamikaze_agent = Kamikaze()
                         kamikaze_mission_outcome = kamikaze_agent.kamikaze(current_page, n_startup)
                         startup_details.update(kamikaze_mission_outcome)
-                        print(kamikaze_mission_outcome)
 
                         data.append(startup_details)
                         log.info(f'Scraper: Added "{startup_details["name"]}".')

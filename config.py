@@ -93,4 +93,6 @@ REGEX = {"phones_pattern" : r'(?:\+212[\s\.\-]?(?:0)?|0)?[5-7]\d(?:[\s\.\-]?\d{2
 DATAPATH = "data/technopark_startups.json"
 
 LOG_OPTIONS = {"level" : log.INFO,
-                "format" : '%(asctime)s - %(levelname)s - %(message)s'}
+                "format" : '%(asctime)s - %(levelname)s - %(message)s',
+                "file_handler": "project.log",
+                "mode" : "w"}

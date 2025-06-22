@@ -19,7 +19,8 @@ class BaseScraper(ABC):
 
         log.basicConfig(level=LOG_OPTIONS["level"], format=LOG_OPTIONS["format"],
                 handlers=[
-                            log.FileHandler("scraper.log", mode='w'),
+                            log.FileHandler(LOG_OPTIONS["file_handler"], mode= LOG_OPTIONS["mode"]),
+
                             log.StreamHandler()  # shows logs in terminal
                             ]
                 )
