@@ -10,7 +10,7 @@ https://www.technopark.ma/start-ups-du-mois/
 
 ## 📩 Content Removal Requests
 
-If you have a problem with any content included in this scraper and would like it to be removed,  
+If you have a problem with any scraped data in this scraper and would like it to be removed,  
 please contact me at [zakaria04aithssain@gmai.com], and I will address it as soon as possible.
 ---
 
@@ -23,7 +23,10 @@ please contact me at [zakaria04aithssain@gmai.com], and I will address it as soo
   - ✅ Technologies
   - ✅ City
   - ✅ Description
-  - ✅ And soon emails and websites.
+  - ✅ Website
+  - ✅ Emails
+  - ✅ Phones
+
 
 ---
 
