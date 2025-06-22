@@ -1,8 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 import logging as log
-from config import XPATHS
-from config import FALLBACKXPATHS
+from config import XPATHS, FALLBACKXPATHS, DATAPATH
 from pandas import DataFrame
 from base import BaseScraper
 from kamikaze import Kamikaze
@@ -114,7 +113,7 @@ class Scraper(BaseScraper):
         if self.data is not None: 
             try:
                 df = DataFrame(self.data)
-                df.to_json(path_or_buf= "data/technopark_startups.json", orient= "records") #records as it contains lists.
+                df.to_json(path_or_buf= DATAPATH, orient= "records") #records as it contains lists.
                 log.info("Scraper: Data saved to json successfully!")
             except Exception as e:
                 log.error(f"Scraper: Failed to save data, exception: {e}")

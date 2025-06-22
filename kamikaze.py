@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 import logging as log
-from config import XPATHS
+from config import XPATHS, REGEX
 import re
 from base import BaseScraper
 
@@ -33,8 +33,8 @@ class Kamikaze(BaseScraper):
 
     def _get_startup_contact_info(self):
         # Regular expressions for pattern matching
-        phone_pattern = r'(?:\+212[\s\.\-]?(?:0)?|0)?[5-7]\d(?:[\s\.\-]?\d{2}){3}'
-        email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+        phone_pattern = REGEX["phones_pattern"]
+        email_pattern = REGEX["emails_pattern"]
         
 
         result = {

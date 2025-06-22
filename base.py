@@ -6,8 +6,7 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import logging as log
-from config import XPATHS
-from config import CHROME_OPTIONS
+from config import XPATHS, CHROME_OPTIONS, LOG_OPTIONS
 import os 
 from abc import ABC
 
@@ -18,7 +17,7 @@ from abc import ABC
 class BaseScraper(ABC): 
     def __init__(self):
 
-        log.basicConfig(level=log.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
+        log.basicConfig(level=LOG_OPTIONS["level"], format=LOG_OPTIONS["format"],
                 handlers=[
                             log.FileHandler("scraper.log", mode='w'),
                             log.StreamHandler()  # shows logs in terminal

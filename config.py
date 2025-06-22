@@ -1,5 +1,9 @@
 # config.py
 #contains the xpaths, fallback xpaths, and the driver's options.
+import logging as log
+
+
+
 XPATHS = {
     "triangle_button": '//*[@id="root"]/div/div/div/div[2]/div[3]/nav/ul/li[9]',
     "name" : "//*[@id='root']/div/div/div/div/div/div[2]/div[1]/h2",
@@ -80,3 +84,13 @@ CHROME_OPTIONS = {
     "disable_blink_features": ("excludeSwitches", ["enable-blink-features=AutomationControlled"])
 }
 
+REGEX = {"phones_pattern" : r'(?:\+212[\s\.\-]?(?:0)?|0)?[5-7]\d(?:[\s\.\-]?\d{2}){3}',
+         
+        "emails_pattern" : r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+        }
+
+
+DATAPATH = "data/technopark_startups.json"
+
+LOG_OPTIONS = {"level" : log.INFO,
+                "format" : '%(asctime)s - %(levelname)s - %(message)s'}
