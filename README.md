@@ -52,8 +52,12 @@ And ensure it is in your system PATH.
 This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) to avoid any inappropriate use.
 You may use, share, and modify this project for non-commercial purposes only.
 
-Read more: https://creativecommons.org/licenses/by-nc/4.0/
-See the LICENSE file.
+
+
+## Citation
+If you use the scrapers or the data in you projects, I would appreciate your citation.
+
+
 
 
 
