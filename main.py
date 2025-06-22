@@ -1,4 +1,4 @@
-from scraper import *
+from functions import *
 from kamikaze import kamikaze
 import pandas as pd
 
@@ -6,10 +6,8 @@ import pandas as pd
 
 def run_scraping():
     driver, wait = initialize_driver()
-    try:
-        driver.get(technopark_url)
-    except Exception as e:
-        log.error(f"Failed to get: {technopark_url} \nException: {e}")
+    try: driver.get(technopark_url)
+    except TimeoutException: log.error(f"Scraper: Failed to get Technopark's URL.")
 
     current_page = 0  # Track current page (0-indexed)
     data = []
@@ -28,9 +26,10 @@ def run_scraping():
 
                     kamikaze_mission = kamikaze(current_page, n_startup)
                     startup_details.update(kamikaze_mission)
+                    print(kamikaze_mission)
 
                     data.append(startup_details)
-                    log.info(f'Added "{startup_details["name"]}".')
+                    log.info(f'Scraper: Added "{startup_details["name"]}".')
 
                     # Navigate back to the correct page after driver.back() took us to page 1
                     for page_num in range(current_page):
@@ -49,16 +48,13 @@ def run_scraping():
                 navigated = click_the_triangle_button(driver, wait)
                 continue
         else:
-            log.info("\n SCRAPING FINISHED SUCCESSFULLY!")
+            log.info("\nScraper: SCRAPING FINISHED SUCCESSFULLY!")
 
     except KeyboardInterrupt:
-        log.warning(" Process interrupted manually!")
+        log.warning("Scraper: Process interrupted manually!")
 
     finally:
         driver.quit()
-
-    data_without_duplicates = [dict(t) for t in set(tuple(sorted(d.items())) for d in data)]
-    log.info(f"Number of unique startups: {len(data_without_duplicates)}")
 
     return data
 
@@ -68,9 +64,9 @@ def save_data(data):
     try:
         df = pd.DataFrame(data)
         df.to_json(path_or_buf= "data/technopark_startups.json", orient= "records")
-        log.info("Data saved successfully!")
+        log.info("Scraper: Data saved successfully!")
     except Exception as e:
-        log.error(f"Enable to save data, because of the following exception: {e}")
+        log.error(f"Scraper: Enable to save data, because of the following exception: {e}")
     
 
 

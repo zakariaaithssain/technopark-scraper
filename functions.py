@@ -50,7 +50,7 @@ def initialize_driver():
     driver = webdriver.Chrome(service=service, options=chrome_options)
     driver.set_page_load_timeout(20)  # Shorter timeout for faster failures
     wait = WebDriverWait(driver, 10)
-    driver.set_page_load_timeout(10)
+    driver.set_page_load_timeout(30)
 
     return driver, wait
 
@@ -162,79 +162,34 @@ def click_startup_website_icon(driver, wait):
 
 def get_startup_contact_info(driver):
     # Regular expressions for pattern matching
-    phone_pattern = r'(?:\+?1[-.\s]?)?\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})'
-    email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+    phone_pattern = r'(?:\+212[\s\.\-]?(?:0)?|0)?[5-7]\d(?:[\s\.\-]?\d{2}){3}'
+    email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
     
 
     result = {
         'phones': set(),
-        'emails': set(),
-        'addresses': set()
+        'emails': set()
     }
+
     page_source = driver.page_source
-        
-    # Also get visible text
     body_text = driver.find_element(By.TAG_NAME, "body").text
-    
     # Combine both sources for comprehensive search
     combined_text = page_source + " " + body_text
     
     # Extract phone numbers
     phone_matches = re.findall(phone_pattern, combined_text)
-    for match in phone_matches:
-        if isinstance(match, tuple):
-            phone = f"({match[0]}) {match[1]}-{match[2]}"
-        else:
-            phone = match
-        result['phones'].add(phone)
-    
-    # Also look for other phone formats
-    other_phone_patterns = [
-        r'(?:\+?1[-.\s]?)?(?:\(?[0-9]{3}\)?[-.\s]?)?[0-9]{3}[-.\s]?[0-9]{4}',
-        r'\+?1?[-.\s]?\(?[0-9]{3}\)?[-.\s]?[0-9]{3}[-.\s]?[0-9]{4}',
-    ]
-    
-    for pattern in other_phone_patterns:
-        phones = re.findall(pattern, combined_text)
-        for phone in phones:
-            # Clean up the phone number
-            clean_phone = re.sub(r'[^\d+]', '', phone)
-            if 10 <= len(clean_phone) <= 12:  # Valid phone length
-                result['phones'].add(phone)
-    
+    result["phones"].update(phone_matches)
     # Extract email addresses
-    emails = re.findall(email_pattern, combined_text)
-    result['emails'].update(emails)
-    
-    # Extract addresses
-    try:
-        addresses = driver.find_element(By.TAG_NAME, "Adresse").text.strip()
-        result['addresses'].update(addresses)
-
-        addresses2 = driver.find_element(By.TAG_NAME, "adresse").text.strip()
-        result['addresses'].update(addresses2)
-
-        # Look for common address indicators in structured data
-        address_elements = driver.find_elements(By.CSS_SELECTOR, 
-            "[class*='address'], [class*='location'], [id*='address'], [id*='location']")
-        
-        for element in address_elements:
-            text = element.text.strip()
-            if text and len(text) > 10:  # Basic filter for meaningful addresses
-                result['addresses'].add(text)
-    
-        
-    except NoSuchElementException: pass
-
+    emails_matches = re.findall(email_pattern, combined_text)
+    result['emails'].update(emails_matches)
+  
     
     # Convert sets to lists for JSON serialization
     result['phones'] = list(result['phones'])
     result['emails'] = list(result['emails'])
-    result['addresses'] = list(result['addresses'])
-    
+
     # Clean up results - remove empty strings and duplicates
     result['phones'] = [p for p in result['phones'] if p.strip()]
     result['emails'] = [e for e in result['emails'] if e.strip()]
-    result['addresses'] = [a for a in result['addresses'] if a.strip()]
 
     return result
