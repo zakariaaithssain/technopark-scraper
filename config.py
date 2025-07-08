@@ -95,4 +95,4 @@ DATAPATH = "data/technopark_startups.json"
 LOG_OPTIONS = {"level" : log.INFO,
                 "format" : '%(asctime)s - %(levelname)s - %(message)s',
                 "file_handler": "project.log",
-                "mode" : "w"}
+                "mode" : "a"}

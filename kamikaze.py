@@ -3,11 +3,10 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-import logging as log
 from config import XPATHS, REGEX
 import re
 from base import BaseScraper
-
+from selenium import webdriver
  
 
 
@@ -67,7 +66,7 @@ class Kamikaze(BaseScraper):
     
 
 
-    def kamikaze(self, current_page, n_startup):
+    def start_mission(self, current_page, n_startup):
         #this function will create a driver that will do everything to get the startups website, and then dieeeee :) thus the name
         try:
             self.driver.get(self.main_url)
@@ -104,6 +103,7 @@ class Kamikaze(BaseScraper):
             startup_contacts = {"emails": [], "phones" : []}
 
         self.driver.quit()
+        self.driver.close()
         self.data['website'] = startup_website
         self.data.update(startup_contacts)
         return self.data
