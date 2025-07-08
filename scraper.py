@@ -5,9 +5,17 @@ from config import XPATHS, FALLBACKXPATHS, DATAPATH
 from pandas import DataFrame
 from base import BaseScraper
 from kamikaze import Kamikaze
+import os
+from config import LOG_OPTIONS
+
 
 class Scraper(BaseScraper):
     def __init__(self):
+        #we delete it from here so we don't get the PermissionError (because initializing the scraper opens the logs file)
+        if os.path.exists(LOG_OPTIONS["file_handler"]):
+            os.remove(LOG_OPTIONS["file_handler"])  #because I am using "a" to write the logs file.
+            print("Older logs file is deleted.")    #if we don't delete the older one, we will have a file containing all logs from the first script run.
+
         super().__init__()
         self.data = None
 
@@ -17,17 +25,16 @@ class Scraper(BaseScraper):
             
         try:
             startup_details = {
-                "name": self._get_text(XPATHS["name"], FALLBACKXPATHS["name"]),
+            "name": self._get_text(XPATHS["name"], FALLBACKXPATHS["name"]),
 
-                "sector": self._get_text(XPATHS["sector"], FALLBACKXPATHS["sector"]),
+            "sector": self._get_text(XPATHS["sector"], FALLBACKXPATHS["sector"]),
 
-                "technologies":self._get_text(XPATHS["technologies"], FALLBACKXPATHS["technologies"]),
+            "technologies":self._get_text(XPATHS["technologies"], FALLBACKXPATHS["technologies"]),
 
-                "city": self._get_text(XPATHS["city"], FALLBACKXPATHS["city"]),
+            "city": self._get_text(XPATHS["city"], FALLBACKXPATHS["city"]),
 
-                "description": self._get_text(XPATHS["description"],FALLBACKXPATHS["description"])
-            }
-
+            "description": self._get_text(XPATHS["description"],FALLBACKXPATHS["description"])
+        }
             return startup_details
             
         except Exception as e:
@@ -53,7 +60,9 @@ class Scraper(BaseScraper):
     
     def scrape(self):
 
-        try: self.driver.get(self.main_url)
+        try: 
+            self.driver.get(self.main_url)
+            log.info("Scraper: Scraping started.")
         except TimeoutException: log.error(f"Scraper: Failed to get Technopark's URL.")
 
         current_page = 0  # Track current page (0-indexed)
@@ -69,13 +78,14 @@ class Scraper(BaseScraper):
                         page_links = self._get_page_startups_links()
                         startup_link = page_links[n_startup]
                         self._click_startup_link(startup_link)
-                        startup_details = self._get_startup_details()  # this calls driver.back() at the end, forcing us to the 1st page each time.
+                        startup_details = self._get_startup_details() # this calls driver.back() at the end, forcing us to the 1st page each time.
 
-                        #ayo launch the kamikaze mission: I always feel excited abt this for no reason.
-                        kamikaze_agent = Kamikaze()
-                        kamikaze_mission_outcome = kamikaze_agent.kamikaze(current_page, n_startup)
-                        startup_details.update(kamikaze_mission_outcome)
 
+                        #disabled the kamikaze until I find out the problem.
+                        """kamikaze_agent = Kamikaze()
+                        kamikaze_mission_outcome = kamikaze_agent.start_mission(current_page, n_startup)
+                        startup_details.update(kamikaze_mission_outcome)"""
+                        
                         data.append(startup_details)
                         log.info(f'Scraper: Added "{startup_details["name"]}".')
 
@@ -97,6 +107,9 @@ class Scraper(BaseScraper):
                     continue
             else:
                 log.info("\nScraper: SCRAPING FINISHED SUCCESSFULLY!")
+                self.data = data
+                return self #this will enable me to "enchainer les appels" (I don't even know how to say it in eng, maybe chain?)
+
 
         except KeyboardInterrupt:
             log.warning("Scraper: Process interrupted manually!")
@@ -104,16 +117,16 @@ class Scraper(BaseScraper):
         finally:
             self.driver.quit()
 
-        self.data = data
-        return self #this will enable me to "enchainer les appels" (I don't even know how to say it in eng, maybe chain?)
-
+        
 
 
     def save_data(self):
         if self.data is not None: 
             try:
                 df = DataFrame(self.data)
-                df.to_json(path_or_buf= DATAPATH, orient= "records") #records as it contains lists.
+                with open(DATAPATH, "w", encoding="utf-8") as f:
+                      df.to_json(f, force_ascii=False, orient= 'records')
+                      
                 log.info("Scraper: Data saved to json successfully!")
             except Exception as e:
                 log.error(f"Scraper: Failed to save data, exception: {e}")

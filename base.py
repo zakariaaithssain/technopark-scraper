@@ -15,7 +15,7 @@ from abc import ABC
 
 
 class BaseScraper(ABC): 
-    def __init__(self):
+    def __init__(self, kamikaze = False):
 
         log.basicConfig(level=LOG_OPTIONS["level"], format=LOG_OPTIONS["format"],
                 handlers=[
@@ -27,35 +27,35 @@ class BaseScraper(ABC):
         self.main_url = "https://www.technopark.ma/start-ups-du-mois/"
         self.driver = None
         self.wait = None
-        self._initialize_driver()
+        if kamikaze: self._initialize_driver(True)
+        else: self._initialize_driver()
 
 
 
-    def _initialize_driver(self):
-        
-        os.environ['CHROME_LOG_FILE'] = 'NUL'
-        
-        chrome_options = Options()
+    def _initialize_driver(self, kamikaze = False):
+
+        #to ignore selenium and webdriver related logs.
+        os.environ['CHROME_LOG_FILE'] = 'NUL' 
+        self.chrome_options = Options()
         service = Service()
         service.log_path = 'NUL'
-        
         log.getLogger('selenium').setLevel(log.CRITICAL)
         log.getLogger('urllib3').setLevel(log.CRITICAL)
 
-        for key, value in CHROME_OPTIONS.items():
+        for _, value in CHROME_OPTIONS.items():
             if isinstance(value, tuple):
-                # Handle special cases like excludeSwitches
+                # handle special cases like excludeSwitches
                 method_name, method_value = value
                 if method_name == "excludeSwitches":
-                    chrome_options.add_experimental_option("excludeSwitches", method_value)
+                    self.chrome_options.add_experimental_option("excludeSwitches", method_value)
                 elif method_name == "useAutomationExtension":
-                    chrome_options.add_experimental_option("useAutomationExtension", method_value)
+                    self.chrome_options.add_experimental_option("useAutomationExtension", method_value)
             else:
-                # Regular arguments
-                chrome_options.add_argument(value)
+                #regular arguments
+                self.chrome_options.add_argument(value)
 
         
-        self.driver = webdriver.Chrome(service=service, options=chrome_options)
+        self.driver = webdriver.Chrome(service=service, options=self.chrome_options)
         self.driver.set_page_load_timeout(20)  # Shorter timeout for faster failures
         self.wait = WebDriverWait(self.driver, 10)
         self.driver.set_page_load_timeout(30)
