@@ -1,328 +1,328 @@
-2025-07-08 20:44:24,626 - INFO - Scraper: Scraping started.
-2025-07-08 20:44:30,230 - INFO - Scraper: Added "Prod'air".
-2025-07-08 20:44:30,498 - INFO - Scraper: Added "Dyn IT Maroc".
-2025-07-08 20:44:30,751 - INFO - Scraper: Added "ARROW ECS".
-2025-07-08 20:44:30,975 - INFO - Scraper: Added "ICC MAROC SERVICES".
-2025-07-08 20:44:31,194 - INFO - Scraper: Added "APEBI - Fédération des Technologies de l'Information, des Télécommunications et de l'Offshoring".
-2025-07-08 20:44:31,415 - INFO - Scraper: Added "Chambre de Commerce Internationale Maroc".
-2025-07-08 20:44:31,640 - INFO - Scraper: Added "ADINES MAROC".
-2025-07-08 20:44:31,863 - INFO - Scraper: Added "VIGEO".
-2025-07-08 20:44:32,105 - INFO - Scraper: Added "Maroc Numeric Fund.".
-2025-07-08 20:44:32,458 - INFO - Scraper: Added "Centre des Jeunes Dirigeants".
-2025-07-08 20:44:32,767 - INFO - Scraper: Added "AL AKHAWAYN UNIVERSITY".
-2025-07-08 20:44:33,046 - INFO - Scraper: Added "Arcanes Technologies".
-2025-07-08 20:44:33,346 - INFO - Scraper: Added "ITFACTO".
-2025-07-08 20:44:33,641 - INFO - Scraper: Added "Pulse Informatique".
-2025-07-08 20:44:33,960 - INFO - Scraper: Added "Réseau Entreprendre Maroc".
-2025-07-08 20:44:34,254 - INFO - Scraper: Added "Happy Ventures".
-2025-07-08 20:44:34,563 - INFO - Scraper: Added "Innovation Process Control".
-2025-07-08 20:44:34,866 - INFO - Scraper: Added "Association Enactus Morocco".
-2025-07-08 20:44:35,260 - INFO - Scraper: Added "ATRAIT TECHNOLOGIES".
-2025-07-08 20:44:35,616 - INFO - Scraper: Added "xHub".
-2025-07-08 20:44:35,971 - INFO - Scraper: Added "BCLOUD Consulting".
-2025-07-08 20:44:36,322 - INFO - Scraper: Added "BMCE BANK".
-2025-07-08 20:44:36,691 - INFO - Scraper: Added "Welearn".
-2025-07-08 20:44:37,039 - INFO - Scraper: Added "Mosaiclab".
-2025-07-08 20:44:37,412 - INFO - Scraper: Added "Easyrun".
-2025-07-08 20:44:37,829 - INFO - Scraper: Added "ZEN NETWORKS".
-2025-07-08 20:44:38,202 - INFO - Scraper: Added "INSTITUT NATIONAL DES POSTES ET TELECOMMUNICATIONS (INPT)".
-2025-07-08 20:44:38,662 - INFO - Scraper: Added "CYCLAD MAROC".
-2025-07-08 20:44:39,105 - INFO - Scraper: Added "ACTIVELABS".
-2025-07-08 20:44:39,517 - INFO - Scraper: Added "Inovadex Consulting".
-2025-07-08 20:44:39,936 - INFO - Scraper: Added "HUMAN MARKETING CONSULTING".
-2025-07-08 20:44:40,346 - INFO - Scraper: Added "OMNISHORE SARL".
-2025-07-08 20:44:40,770 - INFO - Scraper: Added "ECONER SARL".
-2025-07-08 20:44:41,186 - INFO - Scraper: Added "Skylark Services".
-2025-07-08 20:44:41,605 - INFO - Scraper: Added "La startup station".
-2025-07-08 20:44:42,035 - INFO - Scraper: Added "PIXELWEB".
-2025-07-08 20:44:42,554 - INFO - Scraper: Added "LBA Factory".
-2025-07-08 20:44:43,035 - INFO - Scraper: Added "Precision Systems".
-2025-07-08 20:44:43,520 - INFO - Scraper: Added "SMARTBUS".
-2025-07-08 20:44:44,016 - INFO - Scraper: Added "WGENCY".
-2025-07-08 20:44:44,504 - INFO - Scraper: Added "Positeams SARL".
-2025-07-08 20:44:44,998 - INFO - Scraper: Added "JOB2COM".
-2025-07-08 20:44:45,482 - INFO - Scraper: Added "Education Media Company".
-2025-07-08 20:44:45,939 - INFO - Scraper: Added "DABATEK".
-2025-07-08 20:44:46,466 - INFO - Scraper: Added "gest'up sarl".
-2025-07-08 20:44:47,035 - INFO - Scraper: Added "Hsabati".
-2025-07-08 20:44:47,572 - INFO - Scraper: Added "DevoTech".
-2025-07-08 20:44:48,145 - INFO - Scraper: Added "HOUSSNIJOB".
-2025-07-08 20:44:48,993 - INFO - Scraper: Added "AgenZ SARL".
-2025-07-08 20:44:49,779 - INFO - Scraper: Added "Orange StartOn".
-2025-07-08 20:44:50,437 - INFO - Scraper: Added "ODDNET".
-2025-07-08 20:44:51,057 - INFO - Scraper: Added "TENORS COMPETENCES".
-2025-07-08 20:44:51,598 - INFO - Scraper: Added "SAGIDEV".
-2025-07-08 20:44:52,150 - INFO - Scraper: Added "Onedustry Technologies SARL".
-2025-07-08 20:44:52,769 - INFO - Scraper: Added "COGNERP NORTH AFRICA /COGNITUS".
-2025-07-08 20:44:53,443 - INFO - Scraper: Added "GE Network".
-2025-07-08 20:44:54,051 - INFO - Scraper: Added "I-City".
-2025-07-08 20:44:54,677 - INFO - Scraper: Added "CLOUDFRET".
-2025-07-08 20:44:55,280 - INFO - Scraper: Added "The Nameless Company".
-2025-07-08 20:44:55,898 - INFO - Scraper: Added "CEED MOROCCO".
-2025-07-08 20:44:56,561 - INFO - Scraper: Added "Dinomite Studios".
-2025-07-08 20:44:57,171 - INFO - Scraper: Added "SCA prod".
-2025-07-08 20:44:57,834 - INFO - Scraper: Added "MEDIA FUSION".
-2025-07-08 20:44:58,736 - INFO - Scraper: Added "Vetras Electronics".
-2025-07-08 20:44:59,452 - INFO - Scraper: Added "Centre Tamkeen".
-2025-07-08 20:45:00,165 - INFO - Scraper: Added "Id&a tech".
-2025-07-08 20:45:00,826 - INFO - Scraper: Added "DEALKHIR".
-2025-07-08 20:45:01,476 - INFO - Scraper: Added "Ta7alil2.0".
-2025-07-08 20:45:02,119 - INFO - Scraper: Added "Wojod".
-2025-07-08 20:45:02,871 - INFO - Scraper: Added "advance agency".
-2025-07-08 20:45:03,548 - INFO - Scraper: Added "HD VISION GROUPE".
-2025-07-08 20:45:04,211 - INFO - Scraper: Added "MONTBLANC CONSULTING".
-2025-07-08 20:45:05,000 - INFO - Scraper: Added "Iosen tech".
-2025-07-08 20:45:05,716 - INFO - Scraper: Added "BENGY.H SOLUTIONS".
-2025-07-08 20:45:06,434 - INFO - Scraper: Added "QC Tech SARL".
-2025-07-08 20:45:07,176 - INFO - Scraper: Added "HumanTech Solutions".
-2025-07-08 20:45:07,876 - INFO - Scraper: Added "ONLINE DIGITAL MEDIA AGENCY".
-2025-07-08 20:45:08,630 - INFO - Scraper: Added "U AXELERATE".
-2025-07-08 20:45:09,395 - INFO - Scraper: Added "ARIST".
-2025-07-08 20:45:10,069 - INFO - Scraper: Added "GAME UP".
-2025-07-08 20:45:10,780 - INFO - Scraper: Added "DIGI FIRM".
-2025-07-08 20:45:11,615 - INFO - Scraper: Added "Marka Solution".
-2025-07-08 20:45:12,495 - INFO - Scraper: Added "ACAL Solutions".
-2025-07-08 20:45:13,390 - INFO - Scraper: Added "IS-TECH".
-2025-07-08 20:45:14,228 - INFO - Scraper: Added "Go Branding".
-2025-07-08 20:45:15,074 - INFO - Scraper: Added "TEC FORGE SARL".
-2025-07-08 20:45:16,092 - INFO - Scraper: Added "RÉFÉRENCEMENT WEB".
-2025-07-08 20:45:16,938 - INFO - Scraper: Added "ZY DEV SARL".
-2025-07-08 20:45:17,762 - INFO - Scraper: Added "Conseil Khatim".
-2025-07-08 20:45:18,579 - INFO - Scraper: Added "Alliance Ever".
-2025-07-08 20:45:19,505 - INFO - Scraper: Added "NOWEDGE SARL".
-2025-07-08 20:45:20,415 - INFO - Scraper: Added "PIGMA SYSTEM SARL".
-2025-07-08 20:45:21,336 - INFO - Scraper: Added "Coding Art".
-2025-07-08 20:45:22,284 - INFO - Scraper: Added "GRAVITON SOLUTIONS".
-2025-07-08 20:45:23,415 - INFO - Scraper: Added "EBTIKARWEB".
-2025-07-08 20:45:24,431 - INFO - Scraper: Added "MZ LOUAFI".
-2025-07-08 20:45:25,391 - INFO - Scraper: Added "Zenika Technology".
-2025-07-08 20:45:26,574 - INFO - Scraper: Added "YOKAMOS SARL".
-2025-07-08 20:45:27,958 - INFO - Scraper: Added "BIBORNE".
-2025-07-08 20:45:29,458 - INFO - Scraper: Added "ESSANET MAROC".
-2025-07-08 20:45:30,915 - INFO - Scraper: Added "Meriva".
-2025-07-08 20:45:31,881 - INFO - Scraper: Added "KEKELI ACADEMY".
-2025-07-08 20:45:33,013 - INFO - Scraper: Added "SONATE TECHNOLOGIE".
-2025-07-08 20:45:34,501 - INFO - Scraper: Added "Hisneo".
-2025-07-08 20:45:35,694 - INFO - Scraper: Added "Euryops".
-2025-07-08 20:45:36,933 - INFO - Scraper: Added "GEOAP".
-2025-07-08 20:45:38,137 - INFO - Scraper: Added "MARKET SHARE SARL".
-2025-07-08 20:45:39,176 - INFO - Scraper: Added "Noops".
-2025-07-08 20:45:40,471 - INFO - Scraper: Added "Kayan Arts".
-2025-07-08 20:45:42,089 - INFO - Scraper: Added "Wedo app".
-2025-07-08 20:45:43,925 - INFO - Scraper: Added "BitBot".
-2025-07-08 20:45:45,208 - INFO - Scraper: Added "Marketpill".
-2025-07-08 20:45:46,444 - INFO - Scraper: Added "SG digital and service".
-2025-07-08 20:45:47,576 - INFO - Scraper: Added "BIM'R Engineering".
-2025-07-08 20:45:48,752 - INFO - Scraper: Added "Thinksoft solutions".
-2025-07-08 20:45:50,176 - INFO - Scraper: Added "EGA SOLUTIONS SARL".
-2025-07-08 20:45:51,325 - INFO - Scraper: Added "SOCIETE SILYA BUSINESS".
-2025-07-08 20:45:52,626 - INFO - Scraper: Added "Assala Production".
-2025-07-08 20:45:53,760 - INFO - Scraper: Added "NEXT CONSULTING".
-2025-07-08 20:45:55,046 - INFO - Scraper: Added "DIGILION AGENCY".
-2025-07-08 20:45:56,333 - INFO - Scraper: Added "SOCIETE AFRICAINE DE L'ORGANISATION ET DE DEVELOPPEMENT DES METIERS DES INDEPENDANTS".
-2025-07-08 20:45:57,407 - INFO - Scraper: Added "D-EXPERTS".
-2025-07-08 20:45:58,485 - INFO - Scraper: Added "New Global Electronics".
-2025-07-08 20:45:59,513 - INFO - Scraper: Added "10gital".
-2025-07-08 20:46:00,641 - INFO - Scraper: Added "Fondation HIBA".
-2025-07-08 20:46:01,802 - INFO - Scraper: Added "LeMarketing Maroc".
-2025-07-08 20:46:03,136 - INFO - Scraper: Added "SAHAB DEV".
-2025-07-08 20:46:04,334 - INFO - Scraper: Added "Ethical Data Security".
-2025-07-08 20:46:05,490 - INFO - Scraper: Added "Bewize".
-2025-07-08 20:46:06,611 - INFO - Scraper: Added "Featury Maroc".
-2025-07-08 20:46:07,751 - INFO - Scraper: Added "CDA CONSULTING".
-2025-07-08 20:46:08,900 - INFO - Scraper: Added "AFFAIRINO".
-2025-07-08 20:46:10,033 - INFO - Scraper: Added "TRT POS".
-2025-07-08 20:46:11,149 - INFO - Scraper: Added "GIFT MANAGEMENT MOROCCO".
-2025-07-08 20:46:12,318 - INFO - Scraper: Added "DIGITAL4YOU CONSULTING".
-2025-07-08 20:46:13,548 - INFO - Scraper: Added "Hany & Zen".
-2025-07-08 20:46:14,697 - INFO - Scraper: Added "Schoolify".
-2025-07-08 20:46:15,896 - INFO - Scraper: Added "V5 DIGITAL".
-2025-07-08 20:46:17,087 - INFO - Scraper: Added "ISSROAD".
-2025-07-08 20:46:18,271 - INFO - Scraper: Added "Servalog".
-2025-07-08 20:46:19,484 - INFO - Scraper: Added "Nostrum Media Sarl".
-2025-07-08 20:46:20,670 - INFO - Scraper: Added "Club Des Dirigeants".
-2025-07-08 20:46:21,913 - INFO - Scraper: Added "OPENSCHOOL".
-2025-07-08 20:46:23,113 - INFO - Scraper: Added "ZAIM DIGITAL".
-2025-07-08 20:46:24,403 - INFO - Scraper: Added "HIGH IT LAB".
-2025-07-08 20:46:25,739 - INFO - Scraper: Added "Hala Techno".
-2025-07-08 20:46:27,010 - INFO - Scraper: Added "GAS INDUSTY CONSULTING & SERVICES "GICS"".
-2025-07-08 20:46:28,257 - INFO - Scraper: Added "D&A TRUST".
-2025-07-08 20:46:29,511 - INFO - Scraper: Added "TRESORERIE.MA".
-2025-07-08 20:46:30,738 - INFO - Scraper: Added "4 TECH Lab".
-2025-07-08 20:46:32,040 - INFO - Scraper: Added "1337".
-2025-07-08 20:46:33,299 - INFO - Scraper: Added "CENT ONZE FACTORY SARL".
-2025-07-08 20:46:34,605 - INFO - Scraper: Added "Y SCHOOL".
-2025-07-08 20:46:35,950 - INFO - Scraper: Added "AGENCE DIGITALE GZAM - SARL".
-2025-07-08 20:46:37,281 - INFO - Scraper: Added "APTUS SOFTWARE".
-2025-07-08 20:46:38,624 - INFO - Scraper: Added "kenjanoishi".
-2025-07-08 20:46:39,942 - INFO - Scraper: Added "APPBASE".
-2025-07-08 20:46:41,297 - INFO - Scraper: Added "HBM Solutions".
-2025-07-08 20:46:42,612 - INFO - Scraper: Added "Pazel TECHNOLOGIE".
-2025-07-08 20:46:43,951 - INFO - Scraper: Added "SHAPEKEY".
-2025-07-08 20:46:45,300 - INFO - Scraper: Added "Solinnova".
-2025-07-08 20:46:46,618 - INFO - Scraper: Added "Apptree".
-2025-07-08 20:46:48,018 - INFO - Scraper: Added "bytebuild sarl".
-2025-07-08 20:46:49,432 - INFO - Scraper: Added "E-VIA IT SERVICES".
-2025-07-08 20:46:50,815 - INFO - Scraper: Added "C Behind".
-2025-07-08 20:46:52,198 - INFO - Scraper: Added "TERRAGIS".
-2025-07-08 20:46:53,615 - INFO - Scraper: Added "MCISE".
-2025-07-08 20:46:54,969 - INFO - Scraper: Added "DEVTI TECHNOLOGIE".
-2025-07-08 20:46:56,372 - INFO - Scraper: Added "ASSOCIATION TIBU AFRICA".
-2025-07-08 20:46:57,703 - INFO - Scraper: Added "Axlab".
-2025-07-08 20:46:59,186 - INFO - Scraper: Added "AMASOFT".
-2025-07-08 20:47:00,700 - INFO - Scraper: Added "Caisse de Dépôt et de Gestion".
-2025-07-08 20:47:02,137 - INFO - Scraper: Added "HELP MARIAGE".
-2025-07-08 20:47:03,631 - INFO - Scraper: Added "FONDATION MAROCAINE DE L'EDUCATION POUR L'EMPLOI".
-2025-07-08 20:47:05,065 - INFO - Scraper: Added "BTRUST ADVISORY & TECHNOLOGY".
-2025-07-08 20:47:06,530 - INFO - Scraper: Added "AVENIRPRENEUR".
-2025-07-08 20:47:07,939 - INFO - Scraper: Added "DIGITO".
-2025-07-08 20:47:09,409 - INFO - Scraper: Added "PayNow".
-2025-07-08 20:47:10,846 - INFO - Scraper: Added "NEXTRONIC".
-2025-07-08 20:47:12,281 - INFO - Scraper: Added "DEVCORP".
-2025-07-08 20:47:13,795 - INFO - Scraper: Added "SMART ENGINEERING SOLUTION".
-2025-07-08 20:47:15,236 - INFO - Scraper: Added "YAAS IT".
-2025-07-08 20:47:16,764 - INFO - Scraper: Added "MEDIASSIVE".
-2025-07-08 20:47:18,261 - INFO - Scraper: Added "YANVISION".
-2025-07-08 20:47:19,770 - INFO - Scraper: Added "AS Media Group".
-2025-07-08 20:47:21,290 - INFO - Scraper: Added "SAPHIR CAISSE".
-2025-07-08 20:47:22,794 - INFO - Scraper: Added "MOHAMMED GUIJJOU".
-2025-07-08 20:47:24,330 - INFO - Scraper: Added "WECANDIGITAL SOLUTIONS".
-2025-07-08 20:47:25,911 - INFO - Scraper: Added "mlnetworks".
-2025-07-08 20:47:27,461 - INFO - Scraper: Added "Artchemist Studio".
-2025-07-08 20:47:29,040 - INFO - Scraper: Added "ESTRELLA BUSINESS".
-2025-07-08 20:47:30,669 - INFO - Scraper: Added "VISIOPROCESS".
-2025-07-08 20:47:32,203 - INFO - Scraper: Added "ARRA Engineering".
-2025-07-08 20:47:33,813 - INFO - Scraper: Added "DIGITIS".
-2025-07-08 20:47:35,444 - INFO - Scraper: Added "AISHORE".
-2025-07-08 20:47:37,036 - INFO - Scraper: Added "Smart Retail technologies".
-2025-07-08 20:47:38,627 - INFO - Scraper: Added "MKSTUDIOS Maroc".
-2025-07-08 20:47:40,213 - INFO - Scraper: Added "RADI ART AGENCY SARL AU".
-2025-07-08 20:47:41,926 - INFO - Scraper: Added "SMART COLLECTE".
-2025-07-08 20:47:43,532 - INFO - Scraper: Added "RUBICON".
-2025-07-08 20:47:45,180 - INFO - Scraper: Added "OPENMIND TECHNOLOGIES".
-2025-07-08 20:47:46,830 - INFO - Scraper: Added "BAKHAT MEDIA".
-2025-07-08 20:47:48,420 - INFO - Scraper: Added "DATATIKA".
-2025-07-08 20:47:50,021 - INFO - Scraper: Added "HEBERINO".
-2025-07-08 20:47:51,641 - INFO - Scraper: Added "STE A&T EXPERTS".
-2025-07-08 20:47:53,345 - INFO - Scraper: Added "GLOBAL INFLUENCE".
-2025-07-08 20:47:55,049 - INFO - Scraper: Added "WEBLIFY MEDIA".
-2025-07-08 20:47:56,766 - INFO - Scraper: Added "PIXELFORGE".
-2025-07-08 20:47:58,466 - INFO - Scraper: Added "DIAL TECHNOLOGIES".
-2025-07-08 20:48:00,190 - INFO - Scraper: Added "ADVERTISER".
-2025-07-08 20:48:01,963 - INFO - Scraper: Added "EAC - L'BOULVART".
-2025-07-08 20:48:03,667 - INFO - Scraper: Added "KEY INTELLIGENT TECHNOLOGY".
-2025-07-08 20:48:05,272 - INFO - Scraper: Added "Yo Maroc SARL".
-2025-07-08 20:48:06,966 - INFO - Scraper: Added "SUPART LAB".
-2025-07-08 20:48:08,670 - INFO - Scraper: Added "NeoSequence".
-2025-07-08 20:48:10,389 - INFO - Scraper: Added "SYGMA.AI".
-2025-07-08 20:48:12,271 - INFO - Scraper: Added "MEDIA DIALNA".
-2025-07-08 20:48:14,021 - INFO - Scraper: Added "eaneerdotcom".
-2025-07-08 20:48:15,667 - INFO - Scraper: Added "SYSTEME AND DATA DRIVEN".
-2025-07-08 20:48:17,568 - INFO - Scraper: Added "TALENTECH SOLUTIONS".
-2025-07-08 20:48:19,465 - INFO - Scraper: Added "WEINDUSTRY".
-2025-07-08 20:48:21,371 - INFO - Scraper: Added "DESIGN LAB".
-2025-07-08 20:48:23,378 - INFO - Scraper: Added "AZA PETROSOLUTIONS".
-2025-07-08 20:48:25,207 - INFO - Scraper: Added "MLP Consulting".
-2025-07-08 20:48:27,100 - INFO - Scraper: Added "NEXENTECH CONSULTING".
-2025-07-08 20:48:28,929 - INFO - Scraper: Added "Stream Lean industry".
-2025-07-08 20:48:30,743 - INFO - Scraper: Added "Agri Contracting Services sarl".
-2025-07-08 20:48:32,604 - INFO - Scraper: Added "SARAH & ADAM COMMERCE".
-2025-07-08 20:48:34,412 - INFO - Scraper: Added "DIGITAL STORE BUZZ".
-2025-07-08 20:48:36,194 - INFO - Scraper: Added "CANAL TECHNOLOGY GROUP".
-2025-07-08 20:48:38,071 - INFO - Scraper: Added "CLICK DOC".
-2025-07-08 20:48:39,914 - INFO - Scraper: Added "123 click agency".
-2025-07-08 20:48:41,746 - INFO - Scraper: Added "MORIANA CONSULTING".
-2025-07-08 20:48:43,701 - INFO - Scraper: Added "F2A DIGITAL".
-2025-07-08 20:48:45,649 - INFO - Scraper: Added "SVB DEV".
-2025-07-08 20:48:47,956 - INFO - Scraper: Added "EDRONIC TECHNOLOGIE".
-2025-07-08 20:48:50,029 - INFO - Scraper: Added "SWIFT SOURCING".
-2025-07-08 20:48:52,250 - INFO - Scraper: Added "AuthentiCom".
-2025-07-08 20:48:54,886 - INFO - Scraper: Added "JADARA FOUNDATION".
-2025-07-08 20:48:57,449 - INFO - Scraper: Added "AI WOLVES".
-2025-07-08 20:48:59,614 - INFO - Scraper: Added "TOUIL DIGICOM".
-2025-07-08 20:49:01,544 - INFO - Scraper: Added "Humantal Maroc".
-2025-07-08 20:49:03,818 - INFO - Scraper: Added "HARMONASSABA".
-2025-07-08 20:49:06,182 - INFO - Scraper: Added "MOOROOT STUDIO".
-2025-07-08 20:49:08,241 - INFO - Scraper: Added "MEDIFY".
-2025-07-08 20:49:10,473 - INFO - Scraper: Added "MonFeed".
-2025-07-08 20:49:12,431 - INFO - Scraper: Added "YAN AFRICA".
-2025-07-08 20:49:14,847 - INFO - Scraper: Added "Ki2powers".
-2025-07-08 20:49:17,399 - INFO - Scraper: Added "appGuru".
-2025-07-08 20:49:20,750 - INFO - Scraper: Added "CARTWAY".
-2025-07-08 20:49:22,698 - INFO - Scraper: Added "OLIVE AGENCY MOROCCO".
-2025-07-08 20:49:24,723 - INFO - Scraper: Added "Mobiconnect Technologies SARL".
-2025-07-08 20:49:27,004 - INFO - Scraper: Added "ScandiTek SARL".
-2025-07-08 20:49:29,026 - INFO - Scraper: Added "SMODU".
-2025-07-08 20:49:31,169 - INFO - Scraper: Added "I2DS".
-2025-07-08 20:49:33,262 - INFO - Scraper: Added "MARIAGESDOTIO".
-2025-07-08 20:49:35,395 - INFO - Scraper: Added "JAAG ADVISORY".
-2025-07-08 20:49:37,393 - INFO - Scraper: Added "EVOMARKET".
-2025-07-08 20:49:39,497 - INFO - Scraper: Added "May June Solutions".
-2025-07-08 20:49:41,671 - INFO - Scraper: Added "IBOGA.MA".
-2025-07-08 20:49:43,665 - INFO - Scraper: Added "Innovative & Sustainable Solutions".
-2025-07-08 20:49:45,949 - INFO - Scraper: Added "Wovoiture".
-2025-07-08 20:49:48,613 - INFO - Scraper: Added "Prime synergy group".
-2025-07-08 20:49:51,336 - INFO - Scraper: Added "WASSIE DEVELOPPEMENT".
-2025-07-08 20:49:53,858 - INFO - Scraper: Added "REFOOD".
-2025-07-08 20:49:56,380 - INFO - Scraper: Added "STRATÉGIE TRENTE-DEUX".
-2025-07-08 20:49:59,058 - INFO - Scraper: Added "ESHIFT".
-2025-07-08 20:50:01,593 - INFO - Scraper: Added "AH DIGITAL".
-2025-07-08 20:50:04,560 - INFO - Scraper: Added "TECHSTRIDE SOLUTIONS".
-2025-07-08 20:50:07,062 - INFO - Scraper: Added "AYL AGENCY".
-2025-07-08 20:50:09,697 - INFO - Scraper: Added "KHOTWA'PROD".
-2025-07-08 20:50:12,118 - INFO - Scraper: Added "SGTECH MOROCO".
-2025-07-08 20:50:14,688 - INFO - Scraper: Added "Capture with Ess".
-2025-07-08 20:50:17,318 - INFO - Scraper: Added "EP MASTERS".
-2025-07-08 20:50:19,599 - INFO - Scraper: Added "OPTICAL TELECOM".
-2025-07-08 20:50:22,084 - INFO - Scraper: Added "DARE COMMUNICATION".
-2025-07-08 20:50:24,561 - INFO - Scraper: Added "ARTIZAL".
-2025-07-08 20:50:26,880 - INFO - Scraper: Added "LEADPAL".
-2025-07-08 20:50:29,032 - INFO - Scraper: Added "From Sand to Green - Maroc".
-2025-07-08 20:50:31,380 - INFO - Scraper: Added "BENIFISC CONSULTING".
-2025-07-08 20:50:33,799 - INFO - Scraper: Added "MAGISCOM TECH".
-2025-07-08 20:50:36,118 - INFO - Scraper: Added "SAMTRUST".
-2025-07-08 20:50:38,418 - INFO - Scraper: Added "Biker SOLUTIONS".
-2025-07-08 20:50:40,902 - INFO - Scraper: Added "IDEASPARK".
-2025-07-08 20:50:43,583 - INFO - Scraper: Added "KLEOS SOLUTIONS".
-2025-07-08 20:50:46,069 - INFO - Scraper: Added "Centre Régional d'Investissement Marrakech-Safi".
-2025-07-08 20:50:48,564 - INFO - Scraper: Added "MCTDATA".
-2025-07-08 20:50:50,828 - INFO - Scraper: Added "WEB4JOBS".
-2025-07-08 20:50:53,139 - INFO - Scraper: Added "DIGITALFORGE".
-2025-07-08 20:50:55,554 - INFO - Scraper: Added "MX4 AI".
-2025-07-08 20:50:57,734 - INFO - Scraper: Added "Symbioz it software consulting".
-2025-07-08 20:51:00,042 - INFO - Scraper: Added "EXERPLIK".
-2025-07-08 20:51:02,459 - INFO - Scraper: Added "WEBTRIX".
-2025-07-08 20:51:04,934 - INFO - Scraper: Added "MEDIA POSTGOO".
-2025-07-08 20:51:07,383 - INFO - Scraper: Added "CYBRFORGE".
-2025-07-08 20:51:10,299 - INFO - Scraper: Added "CODEPULSE ST STUDIO".
-2025-07-08 20:51:12,868 - INFO - Scraper: Added "DYNAAS".
-2025-07-08 20:51:15,370 - INFO - Scraper: Added "BETA, SOFTWARE DEVELOPMENT".
-2025-07-08 20:51:17,903 - INFO - Scraper: Added "HOSTINO".
-2025-07-08 20:51:20,685 - INFO - Scraper: Added "WCM MARKETING".
-2025-07-08 20:51:23,394 - INFO - Scraper: Added "FRDISI".
-2025-07-08 20:51:26,142 - INFO - Scraper: Added "SM VALLEY".
-2025-07-08 20:51:28,778 - INFO - Scraper: Added "M² Square Meter".
-2025-07-08 20:51:31,368 - INFO - Scraper: Added "MentorClass Academy".
-2025-07-08 20:51:34,035 - INFO - Scraper: Added "HOOKED DIGITAL".
-2025-07-08 20:51:36,615 - INFO - Scraper: Added "Coalition Marocaine pour l’Eau « COALMA »".
-2025-07-08 20:51:39,578 - INFO - Scraper: Added "MOGIFY AGENCY".
-2025-07-08 20:51:42,350 - INFO - Scraper: Added "REDIA MAROC SAS".
-2025-07-08 20:51:44,715 - INFO - Scraper: Added "WE DO MARKETING".
-2025-07-08 20:51:47,082 - INFO - Scraper: Added "ASK IMPACT".
-2025-07-08 20:51:49,513 - INFO - Scraper: Added "1755 DEV".
-2025-07-08 20:51:51,945 - INFO - Scraper: Added "ALYA PAY".
-2025-07-08 20:51:54,449 - INFO - Scraper: Added "CYKLE".
-2025-07-08 20:51:56,751 - INFO - Scraper: Added "Nexotek".
-2025-07-08 20:51:59,197 - INFO - Scraper: Added "Wise Systems WS".
-2025-07-08 20:52:01,756 - INFO - Scraper: Added "CARREFOUR ANNUAIRE MAROC".
-2025-07-08 20:52:04,402 - INFO - Scraper: Added "ISNADWARE".
-2025-07-08 20:52:06,850 - INFO - Scraper: Added "SHOPYADS AGENCY".
-2025-07-08 20:52:09,463 - INFO - Scraper: Added "NHANCIT".
-2025-07-08 20:52:11,879 - INFO - Scraper: Added "RELAX AGENCY".
-2025-07-08 20:52:14,346 - INFO - Scraper: Added "DOCTIFY HEALTH".
-2025-07-08 20:52:17,118 - INFO - Scraper: Added "Dimacari".
-2025-07-08 20:52:19,614 - INFO - Scraper: Added "AM ORIENTATION".
-2025-07-08 20:52:22,233 - INFO - Scraper: Added "Agence Marocaine Multimédia Sous-Marine".
-2025-07-08 20:52:24,573 - INFO - 
+2025-07-08 21:00:31,400 - INFO - Scraper: Scraping started.
+2025-07-08 21:00:33,258 - INFO - Scraper: Added "Prod'air".
+2025-07-08 21:00:33,463 - INFO - Scraper: Added "Dyn IT Maroc".
+2025-07-08 21:00:33,653 - INFO - Scraper: Added "ARROW ECS".
+2025-07-08 21:00:33,823 - INFO - Scraper: Added "ICC MAROC SERVICES".
+2025-07-08 21:00:33,990 - INFO - Scraper: Added "APEBI - Fédération des Technologies de l'Information, des Télécommunications et de l'Offshoring".
+2025-07-08 21:00:34,191 - INFO - Scraper: Added "Chambre de Commerce Internationale Maroc".
+2025-07-08 21:00:34,400 - INFO - Scraper: Added "ADINES MAROC".
+2025-07-08 21:00:34,617 - INFO - Scraper: Added "VIGEO".
+2025-07-08 21:00:34,802 - INFO - Scraper: Added "Maroc Numeric Fund.".
+2025-07-08 21:00:35,113 - INFO - Scraper: Added "Centre des Jeunes Dirigeants".
+2025-07-08 21:00:35,457 - INFO - Scraper: Added "AL AKHAWAYN UNIVERSITY".
+2025-07-08 21:00:35,735 - INFO - Scraper: Added "Arcanes Technologies".
+2025-07-08 21:00:35,994 - INFO - Scraper: Added "ITFACTO".
+2025-07-08 21:00:36,232 - INFO - Scraper: Added "Pulse Informatique".
+2025-07-08 21:00:36,484 - INFO - Scraper: Added "Réseau Entreprendre Maroc".
+2025-07-08 21:00:36,744 - INFO - Scraper: Added "Happy Ventures".
+2025-07-08 21:00:37,000 - INFO - Scraper: Added "Innovation Process Control".
+2025-07-08 21:00:37,267 - INFO - Scraper: Added "Association Enactus Morocco".
+2025-07-08 21:00:37,610 - INFO - Scraper: Added "ATRAIT TECHNOLOGIES".
+2025-07-08 21:00:37,948 - INFO - Scraper: Added "xHub".
+2025-07-08 21:00:38,267 - INFO - Scraper: Added "BCLOUD Consulting".
+2025-07-08 21:00:38,597 - INFO - Scraper: Added "BMCE BANK".
+2025-07-08 21:00:38,899 - INFO - Scraper: Added "Welearn".
+2025-07-08 21:00:39,236 - INFO - Scraper: Added "Mosaiclab".
+2025-07-08 21:00:39,568 - INFO - Scraper: Added "Easyrun".
+2025-07-08 21:00:39,972 - INFO - Scraper: Added "ZEN NETWORKS".
+2025-07-08 21:00:40,301 - INFO - Scraper: Added "INSTITUT NATIONAL DES POSTES ET TELECOMMUNICATIONS (INPT)".
+2025-07-08 21:00:40,752 - INFO - Scraper: Added "CYCLAD MAROC".
+2025-07-08 21:00:41,159 - INFO - Scraper: Added "ACTIVELABS".
+2025-07-08 21:00:41,591 - INFO - Scraper: Added "Inovadex Consulting".
+2025-07-08 21:00:42,003 - INFO - Scraper: Added "HUMAN MARKETING CONSULTING".
+2025-07-08 21:00:42,563 - INFO - Scraper: Added "OMNISHORE SARL".
+2025-07-08 21:00:43,087 - INFO - Scraper: Added "ECONER SARL".
+2025-07-08 21:00:43,575 - INFO - Scraper: Added "Skylark Services".
+2025-07-08 21:00:43,984 - INFO - Scraper: Added "La startup station".
+2025-07-08 21:00:44,421 - INFO - Scraper: Added "PIXELWEB".
+2025-07-08 21:00:44,950 - INFO - Scraper: Added "LBA Factory".
+2025-07-08 21:00:45,418 - INFO - Scraper: Added "Precision Systems".
+2025-07-08 21:00:45,963 - INFO - Scraper: Added "SMARTBUS".
+2025-07-08 21:00:46,455 - INFO - Scraper: Added "WGENCY".
+2025-07-08 21:00:46,929 - INFO - Scraper: Added "Positeams SARL".
+2025-07-08 21:00:47,406 - INFO - Scraper: Added "JOB2COM".
+2025-07-08 21:00:47,903 - INFO - Scraper: Added "Education Media Company".
+2025-07-08 21:00:48,368 - INFO - Scraper: Added "DABATEK".
+2025-07-08 21:00:49,202 - INFO - Scraper: Added "gest'up sarl".
+2025-07-08 21:00:49,968 - INFO - Scraper: Added "Hsabati".
+2025-07-08 21:00:50,718 - INFO - Scraper: Added "DevoTech".
+2025-07-08 21:00:51,435 - INFO - Scraper: Added "HOUSSNIJOB".
+2025-07-08 21:00:52,015 - INFO - Scraper: Added "AgenZ SARL".
+2025-07-08 21:00:52,520 - INFO - Scraper: Added "Orange StartOn".
+2025-07-08 21:00:53,079 - INFO - Scraper: Added "ODDNET".
+2025-07-08 21:00:53,598 - INFO - Scraper: Added "TENORS COMPETENCES".
+2025-07-08 21:00:54,121 - INFO - Scraper: Added "SAGIDEV".
+2025-07-08 21:00:54,687 - INFO - Scraper: Added "Onedustry Technologies SARL".
+2025-07-08 21:00:55,418 - INFO - Scraper: Added "COGNERP NORTH AFRICA /COGNITUS".
+2025-07-08 21:00:56,098 - INFO - Scraper: Added "GE Network".
+2025-07-08 21:00:56,791 - INFO - Scraper: Added "I-City".
+2025-07-08 21:00:57,513 - INFO - Scraper: Added "CLOUDFRET".
+2025-07-08 21:00:58,197 - INFO - Scraper: Added "The Nameless Company".
+2025-07-08 21:00:58,813 - INFO - Scraper: Added "CEED MOROCCO".
+2025-07-08 21:00:59,477 - INFO - Scraper: Added "Dinomite Studios".
+2025-07-08 21:01:00,073 - INFO - Scraper: Added "SCA prod".
+2025-07-08 21:01:00,652 - INFO - Scraper: Added "MEDIA FUSION".
+2025-07-08 21:01:01,360 - INFO - Scraper: Added "Vetras Electronics".
+2025-07-08 21:01:02,032 - INFO - Scraper: Added "Centre Tamkeen".
+2025-07-08 21:01:02,753 - INFO - Scraper: Added "Id&a tech".
+2025-07-08 21:01:03,427 - INFO - Scraper: Added "DEALKHIR".
+2025-07-08 21:01:04,088 - INFO - Scraper: Added "Ta7alil2.0".
+2025-07-08 21:01:04,791 - INFO - Scraper: Added "Wojod".
+2025-07-08 21:01:05,419 - INFO - Scraper: Added "advance agency".
+2025-07-08 21:01:06,069 - INFO - Scraper: Added "HD VISION GROUPE".
+2025-07-08 21:01:06,747 - INFO - Scraper: Added "MONTBLANC CONSULTING".
+2025-07-08 21:01:07,492 - INFO - Scraper: Added "Iosen tech".
+2025-07-08 21:01:08,246 - INFO - Scraper: Added "BENGY.H SOLUTIONS".
+2025-07-08 21:01:08,999 - INFO - Scraper: Added "QC Tech SARL".
+2025-07-08 21:01:09,804 - INFO - Scraper: Added "HumanTech Solutions".
+2025-07-08 21:01:10,563 - INFO - Scraper: Added "ONLINE DIGITAL MEDIA AGENCY".
+2025-07-08 21:01:11,285 - INFO - Scraper: Added "U AXELERATE".
+2025-07-08 21:01:12,022 - INFO - Scraper: Added "ARIST".
+2025-07-08 21:01:12,775 - INFO - Scraper: Added "GAME UP".
+2025-07-08 21:01:13,525 - INFO - Scraper: Added "DIGI FIRM".
+2025-07-08 21:01:14,365 - INFO - Scraper: Added "Marka Solution".
+2025-07-08 21:01:15,168 - INFO - Scraper: Added "ACAL Solutions".
+2025-07-08 21:01:15,985 - INFO - Scraper: Added "IS-TECH".
+2025-07-08 21:01:16,780 - INFO - Scraper: Added "Go Branding".
+2025-07-08 21:01:17,615 - INFO - Scraper: Added "TEC FORGE SARL".
+2025-07-08 21:01:18,379 - INFO - Scraper: Added "RÉFÉRENCEMENT WEB".
+2025-07-08 21:01:19,182 - INFO - Scraper: Added "ZY DEV SARL".
+2025-07-08 21:01:19,959 - INFO - Scraper: Added "Conseil Khatim".
+2025-07-08 21:01:20,779 - INFO - Scraper: Added "Alliance Ever".
+2025-07-08 21:01:21,654 - INFO - Scraper: Added "NOWEDGE SARL".
+2025-07-08 21:01:22,468 - INFO - Scraper: Added "PIGMA SYSTEM SARL".
+2025-07-08 21:01:23,333 - INFO - Scraper: Added "Coding Art".
+2025-07-08 21:01:24,241 - INFO - Scraper: Added "GRAVITON SOLUTIONS".
+2025-07-08 21:01:25,163 - INFO - Scraper: Added "EBTIKARWEB".
+2025-07-08 21:01:26,007 - INFO - Scraper: Added "MZ LOUAFI".
+2025-07-08 21:01:26,864 - INFO - Scraper: Added "Zenika Technology".
+2025-07-08 21:01:27,745 - INFO - Scraper: Added "YOKAMOS SARL".
+2025-07-08 21:01:28,642 - INFO - Scraper: Added "BIBORNE".
+2025-07-08 21:01:29,597 - INFO - Scraper: Added "ESSANET MAROC".
+2025-07-08 21:01:30,522 - INFO - Scraper: Added "Meriva".
+2025-07-08 21:01:31,508 - INFO - Scraper: Added "KEKELI ACADEMY".
+2025-07-08 21:01:32,651 - INFO - Scraper: Added "SONATE TECHNOLOGIE".
+2025-07-08 21:01:33,640 - INFO - Scraper: Added "Hisneo".
+2025-07-08 21:01:34,538 - INFO - Scraper: Added "Euryops".
+2025-07-08 21:01:35,459 - INFO - Scraper: Added "GEOAP".
+2025-07-08 21:01:36,374 - INFO - Scraper: Added "MARKET SHARE SARL".
+2025-07-08 21:01:37,289 - INFO - Scraper: Added "Noops".
+2025-07-08 21:01:38,293 - INFO - Scraper: Added "Kayan Arts".
+2025-07-08 21:01:39,271 - INFO - Scraper: Added "Wedo app".
+2025-07-08 21:01:40,262 - INFO - Scraper: Added "BitBot".
+2025-07-08 21:01:41,370 - INFO - Scraper: Added "Marketpill".
+2025-07-08 21:01:42,368 - INFO - Scraper: Added "SG digital and service".
+2025-07-08 21:01:43,398 - INFO - Scraper: Added "BIM'R Engineering".
+2025-07-08 21:01:44,427 - INFO - Scraper: Added "Thinksoft solutions".
+2025-07-08 21:01:45,426 - INFO - Scraper: Added "EGA SOLUTIONS SARL".
+2025-07-08 21:01:46,414 - INFO - Scraper: Added "SOCIETE SILYA BUSINESS".
+2025-07-08 21:01:47,517 - INFO - Scraper: Added "Assala Production".
+2025-07-08 21:01:48,593 - INFO - Scraper: Added "NEXT CONSULTING".
+2025-07-08 21:01:49,658 - INFO - Scraper: Added "DIGILION AGENCY".
+2025-07-08 21:01:50,716 - INFO - Scraper: Added "SOCIETE AFRICAINE DE L'ORGANISATION ET DE DEVELOPPEMENT DES METIERS DES INDEPENDANTS".
+2025-07-08 21:01:51,815 - INFO - Scraper: Added "D-EXPERTS".
+2025-07-08 21:01:52,917 - INFO - Scraper: Added "New Global Electronics".
+2025-07-08 21:01:53,994 - INFO - Scraper: Added "10gital".
+2025-07-08 21:01:55,070 - INFO - Scraper: Added "Fondation HIBA".
+2025-07-08 21:01:56,137 - INFO - Scraper: Added "LeMarketing Maroc".
+2025-07-08 21:01:57,266 - INFO - Scraper: Added "SAHAB DEV".
+2025-07-08 21:01:58,414 - INFO - Scraper: Added "Ethical Data Security".
+2025-07-08 21:01:59,527 - INFO - Scraper: Added "Bewize".
+2025-07-08 21:02:00,640 - INFO - Scraper: Added "Featury Maroc".
+2025-07-08 21:02:01,742 - INFO - Scraper: Added "CDA CONSULTING".
+2025-07-08 21:02:02,941 - INFO - Scraper: Added "AFFAIRINO".
+2025-07-08 21:02:04,075 - INFO - Scraper: Added "TRT POS".
+2025-07-08 21:02:05,159 - INFO - Scraper: Added "GIFT MANAGEMENT MOROCCO".
+2025-07-08 21:02:06,267 - INFO - Scraper: Added "DIGITAL4YOU CONSULTING".
+2025-07-08 21:02:07,569 - INFO - Scraper: Added "Hany & Zen".
+2025-07-08 21:02:08,716 - INFO - Scraper: Added "Schoolify".
+2025-07-08 21:02:09,928 - INFO - Scraper: Added "V5 DIGITAL".
+2025-07-08 21:02:11,109 - INFO - Scraper: Added "ISSROAD".
+2025-07-08 21:02:12,273 - INFO - Scraper: Added "Servalog".
+2025-07-08 21:02:13,540 - INFO - Scraper: Added "Nostrum Media Sarl".
+2025-07-08 21:02:14,823 - INFO - Scraper: Added "Club Des Dirigeants".
+2025-07-08 21:02:15,989 - INFO - Scraper: Added "OPENSCHOOL".
+2025-07-08 21:02:17,192 - INFO - Scraper: Added "ZAIM DIGITAL".
+2025-07-08 21:02:18,505 - INFO - Scraper: Added "HIGH IT LAB".
+2025-07-08 21:02:19,860 - INFO - Scraper: Added "Hala Techno".
+2025-07-08 21:02:21,171 - INFO - Scraper: Added "GAS INDUSTY CONSULTING & SERVICES "GICS"".
+2025-07-08 21:02:22,442 - INFO - Scraper: Added "D&A TRUST".
+2025-07-08 21:02:23,715 - INFO - Scraper: Added "TRESORERIE.MA".
+2025-07-08 21:02:25,039 - INFO - Scraper: Added "4 TECH Lab".
+2025-07-08 21:02:26,290 - INFO - Scraper: Added "1337".
+2025-07-08 21:02:27,631 - INFO - Scraper: Added "CENT ONZE FACTORY SARL".
+2025-07-08 21:02:28,897 - INFO - Scraper: Added "Y SCHOOL".
+2025-07-08 21:02:30,275 - INFO - Scraper: Added "AGENCE DIGITALE GZAM - SARL".
+2025-07-08 21:02:31,585 - INFO - Scraper: Added "APTUS SOFTWARE".
+2025-07-08 21:02:32,940 - INFO - Scraper: Added "kenjanoishi".
+2025-07-08 21:02:34,328 - INFO - Scraper: Added "APPBASE".
+2025-07-08 21:02:35,733 - INFO - Scraper: Added "HBM Solutions".
+2025-07-08 21:02:37,029 - INFO - Scraper: Added "Pazel TECHNOLOGIE".
+2025-07-08 21:02:38,364 - INFO - Scraper: Added "SHAPEKEY".
+2025-07-08 21:02:39,655 - INFO - Scraper: Added "Solinnova".
+2025-07-08 21:02:41,088 - INFO - Scraper: Added "Apptree".
+2025-07-08 21:02:42,552 - INFO - Scraper: Added "bytebuild sarl".
+2025-07-08 21:02:43,920 - INFO - Scraper: Added "E-VIA IT SERVICES".
+2025-07-08 21:02:45,349 - INFO - Scraper: Added "C Behind".
+2025-07-08 21:02:46,871 - INFO - Scraper: Added "TERRAGIS".
+2025-07-08 21:02:48,304 - INFO - Scraper: Added "MCISE".
+2025-07-08 21:02:49,705 - INFO - Scraper: Added "DEVTI TECHNOLOGIE".
+2025-07-08 21:02:51,150 - INFO - Scraper: Added "ASSOCIATION TIBU AFRICA".
+2025-07-08 21:02:52,897 - INFO - Scraper: Added "Axlab".
+2025-07-08 21:02:54,787 - INFO - Scraper: Added "AMASOFT".
+2025-07-08 21:02:56,547 - INFO - Scraper: Added "Caisse de Dépôt et de Gestion".
+2025-07-08 21:02:58,132 - INFO - Scraper: Added "HELP MARIAGE".
+2025-07-08 21:02:59,852 - INFO - Scraper: Added "FONDATION MAROCAINE DE L'EDUCATION POUR L'EMPLOI".
+2025-07-08 21:03:02,733 - INFO - Scraper: Added "BTRUST ADVISORY & TECHNOLOGY".
+2025-07-08 21:03:05,062 - INFO - Scraper: Added "AVENIRPRENEUR".
+2025-07-08 21:03:06,782 - INFO - Scraper: Added "DIGITO".
+2025-07-08 21:03:08,286 - INFO - Scraper: Added "PayNow".
+2025-07-08 21:03:09,773 - INFO - Scraper: Added "NEXTRONIC".
+2025-07-08 21:03:11,349 - INFO - Scraper: Added "DEVCORP".
+2025-07-08 21:03:13,100 - INFO - Scraper: Added "SMART ENGINEERING SOLUTION".
+2025-07-08 21:03:14,729 - INFO - Scraper: Added "YAAS IT".
+2025-07-08 21:03:16,691 - INFO - Scraper: Added "MEDIASSIVE".
+2025-07-08 21:03:18,250 - INFO - Scraper: Added "YANVISION".
+2025-07-08 21:03:19,797 - INFO - Scraper: Added "AS Media Group".
+2025-07-08 21:03:21,278 - INFO - Scraper: Added "SAPHIR CAISSE".
+2025-07-08 21:03:22,790 - INFO - Scraper: Added "MOHAMMED GUIJJOU".
+2025-07-08 21:03:24,388 - INFO - Scraper: Added "WECANDIGITAL SOLUTIONS".
+2025-07-08 21:03:25,936 - INFO - Scraper: Added "mlnetworks".
+2025-07-08 21:03:27,625 - INFO - Scraper: Added "Artchemist Studio".
+2025-07-08 21:03:29,251 - INFO - Scraper: Added "ESTRELLA BUSINESS".
+2025-07-08 21:03:30,891 - INFO - Scraper: Added "VISIOPROCESS".
+2025-07-08 21:03:32,528 - INFO - Scraper: Added "ARRA Engineering".
+2025-07-08 21:03:34,164 - INFO - Scraper: Added "DIGITIS".
+2025-07-08 21:03:35,768 - INFO - Scraper: Added "AISHORE".
+2025-07-08 21:03:37,399 - INFO - Scraper: Added "Smart Retail technologies".
+2025-07-08 21:03:39,016 - INFO - Scraper: Added "MKSTUDIOS Maroc".
+2025-07-08 21:03:40,646 - INFO - Scraper: Added "RADI ART AGENCY SARL AU".
+2025-07-08 21:03:42,450 - INFO - Scraper: Added "SMART COLLECTE".
+2025-07-08 21:03:44,168 - INFO - Scraper: Added "RUBICON".
+2025-07-08 21:03:45,840 - INFO - Scraper: Added "OPENMIND TECHNOLOGIES".
+2025-07-08 21:03:47,480 - INFO - Scraper: Added "BAKHAT MEDIA".
+2025-07-08 21:03:49,195 - INFO - Scraper: Added "DATATIKA".
+2025-07-08 21:03:50,897 - INFO - Scraper: Added "HEBERINO".
+2025-07-08 21:03:52,624 - INFO - Scraper: Added "STE A&T EXPERTS".
+2025-07-08 21:03:54,380 - INFO - Scraper: Added "GLOBAL INFLUENCE".
+2025-07-08 21:03:56,089 - INFO - Scraper: Added "WEBLIFY MEDIA".
+2025-07-08 21:03:57,868 - INFO - Scraper: Added "PIXELFORGE".
+2025-07-08 21:03:59,613 - INFO - Scraper: Added "DIAL TECHNOLOGIES".
+2025-07-08 21:04:01,398 - INFO - Scraper: Added "ADVERTISER".
+2025-07-08 21:04:03,209 - INFO - Scraper: Added "EAC - L'BOULVART".
+2025-07-08 21:04:04,973 - INFO - Scraper: Added "KEY INTELLIGENT TECHNOLOGY".
+2025-07-08 21:04:06,934 - INFO - Scraper: Added "Yo Maroc SARL".
+2025-07-08 21:04:08,806 - INFO - Scraper: Added "SUPART LAB".
+2025-07-08 21:04:10,704 - INFO - Scraper: Added "NeoSequence".
+2025-07-08 21:04:12,494 - INFO - Scraper: Added "SYGMA.AI".
+2025-07-08 21:04:14,436 - INFO - Scraper: Added "MEDIA DIALNA".
+2025-07-08 21:04:16,365 - INFO - Scraper: Added "eaneerdotcom".
+2025-07-08 21:04:18,172 - INFO - Scraper: Added "SYSTEME AND DATA DRIVEN".
+2025-07-08 21:04:20,135 - INFO - Scraper: Added "TALENTECH SOLUTIONS".
+2025-07-08 21:04:22,141 - INFO - Scraper: Added "WEINDUSTRY".
+2025-07-08 21:04:23,964 - INFO - Scraper: Added "DESIGN LAB".
+2025-07-08 21:04:25,792 - INFO - Scraper: Added "AZA PETROSOLUTIONS".
+2025-07-08 21:04:27,625 - INFO - Scraper: Added "MLP Consulting".
+2025-07-08 21:04:29,627 - INFO - Scraper: Added "NEXENTECH CONSULTING".
+2025-07-08 21:04:31,562 - INFO - Scraper: Added "Stream Lean industry".
+2025-07-08 21:04:33,620 - INFO - Scraper: Added "Agri Contracting Services sarl".
+2025-07-08 21:04:35,498 - INFO - Scraper: Added "SARAH & ADAM COMMERCE".
+2025-07-08 21:04:37,421 - INFO - Scraper: Added "DIGITAL STORE BUZZ".
+2025-07-08 21:04:39,393 - INFO - Scraper: Added "CANAL TECHNOLOGY GROUP".
+2025-07-08 21:04:41,466 - INFO - Scraper: Added "CLICK DOC".
+2025-07-08 21:04:43,386 - INFO - Scraper: Added "123 click agency".
+2025-07-08 21:04:45,394 - INFO - Scraper: Added "MORIANA CONSULTING".
+2025-07-08 21:04:47,352 - INFO - Scraper: Added "F2A DIGITAL".
+2025-07-08 21:04:49,555 - INFO - Scraper: Added "SVB DEV".
+2025-07-08 21:04:51,557 - INFO - Scraper: Added "EDRONIC TECHNOLOGIE".
+2025-07-08 21:04:53,649 - INFO - Scraper: Added "SWIFT SOURCING".
+2025-07-08 21:04:55,809 - INFO - Scraper: Added "AuthentiCom".
+2025-07-08 21:04:57,880 - INFO - Scraper: Added "JADARA FOUNDATION".
+2025-07-08 21:05:00,135 - INFO - Scraper: Added "AI WOLVES".
+2025-07-08 21:05:02,275 - INFO - Scraper: Added "TOUIL DIGICOM".
+2025-07-08 21:05:04,314 - INFO - Scraper: Added "Humantal Maroc".
+2025-07-08 21:05:06,509 - INFO - Scraper: Added "HARMONASSABA".
+2025-07-08 21:05:08,598 - INFO - Scraper: Added "MOOROOT STUDIO".
+2025-07-08 21:05:10,742 - INFO - Scraper: Added "MEDIFY".
+2025-07-08 21:05:12,872 - INFO - Scraper: Added "MonFeed".
+2025-07-08 21:05:15,186 - INFO - Scraper: Added "YAN AFRICA".
+2025-07-08 21:05:17,294 - INFO - Scraper: Added "Ki2powers".
+2025-07-08 21:05:19,435 - INFO - Scraper: Added "appGuru".
+2025-07-08 21:05:21,562 - INFO - Scraper: Added "CARTWAY".
+2025-07-08 21:05:23,791 - INFO - Scraper: Added "OLIVE AGENCY MOROCCO".
+2025-07-08 21:05:26,492 - INFO - Scraper: Added "Mobiconnect Technologies SARL".
+2025-07-08 21:05:28,783 - INFO - Scraper: Added "ScandiTek SARL".
+2025-07-08 21:05:31,109 - INFO - Scraper: Added "SMODU".
+2025-07-08 21:05:33,267 - INFO - Scraper: Added "I2DS".
+2025-07-08 21:05:35,476 - INFO - Scraper: Added "MARIAGESDOTIO".
+2025-07-08 21:05:37,685 - INFO - Scraper: Added "JAAG ADVISORY".
+2025-07-08 21:05:39,917 - INFO - Scraper: Added "EVOMARKET".
+2025-07-08 21:05:42,177 - INFO - Scraper: Added "May June Solutions".
+2025-07-08 21:05:44,773 - INFO - Scraper: Added "IBOGA.MA".
+2025-07-08 21:05:47,029 - INFO - Scraper: Added "Innovative & Sustainable Solutions".
+2025-07-08 21:05:49,584 - INFO - Scraper: Added "Wovoiture".
+2025-07-08 21:05:51,958 - INFO - Scraper: Added "Prime synergy group".
+2025-07-08 21:05:54,200 - INFO - Scraper: Added "WASSIE DEVELOPPEMENT".
+2025-07-08 21:05:56,710 - INFO - Scraper: Added "REFOOD".
+2025-07-08 21:05:59,074 - INFO - Scraper: Added "STRATÉGIE TRENTE-DEUX".
+2025-07-08 21:06:01,417 - INFO - Scraper: Added "ESHIFT".
+2025-07-08 21:06:04,116 - INFO - Scraper: Added "AH DIGITAL".
+2025-07-08 21:06:06,449 - INFO - Scraper: Added "TECHSTRIDE SOLUTIONS".
+2025-07-08 21:06:08,763 - INFO - Scraper: Added "AYL AGENCY".
+2025-07-08 21:06:11,248 - INFO - Scraper: Added "KHOTWA'PROD".
+2025-07-08 21:06:13,843 - INFO - Scraper: Added "SGTECH MOROCO".
+2025-07-08 21:06:16,263 - INFO - Scraper: Added "Capture with Ess".
+2025-07-08 21:06:18,878 - INFO - Scraper: Added "EP MASTERS".
+2025-07-08 21:06:21,305 - INFO - Scraper: Added "OPTICAL TELECOM".
+2025-07-08 21:06:23,746 - INFO - Scraper: Added "DARE COMMUNICATION".
+2025-07-08 21:06:26,266 - INFO - Scraper: Added "ARTIZAL".
+2025-07-08 21:06:28,653 - INFO - Scraper: Added "LEADPAL".
+2025-07-08 21:06:31,268 - INFO - Scraper: Added "From Sand to Green - Maroc".
+2025-07-08 21:06:33,858 - INFO - Scraper: Added "BENIFISC CONSULTING".
+2025-07-08 21:06:36,617 - INFO - Scraper: Added "MAGISCOM TECH".
+2025-07-08 21:06:39,216 - INFO - Scraper: Added "SAMTRUST".
+2025-07-08 21:06:41,792 - INFO - Scraper: Added "Biker SOLUTIONS".
+2025-07-08 21:06:44,357 - INFO - Scraper: Added "IDEASPARK".
+2025-07-08 21:06:47,134 - INFO - Scraper: Added "KLEOS SOLUTIONS".
+2025-07-08 21:06:49,782 - INFO - Scraper: Added "Centre Régional d'Investissement Marrakech-Safi".
+2025-07-08 21:06:52,505 - INFO - Scraper: Added "MCTDATA".
+2025-07-08 21:06:55,028 - INFO - Scraper: Added "WEB4JOBS".
+2025-07-08 21:06:58,610 - INFO - Scraper: Added "DIGITALFORGE".
+2025-07-08 21:07:01,699 - INFO - Scraper: Added "MX4 AI".
+2025-07-08 21:07:04,478 - INFO - Scraper: Added "Symbioz it software consulting".
+2025-07-08 21:07:07,767 - INFO - Scraper: Added "EXERPLIK".
+2025-07-08 21:07:12,588 - INFO - Scraper: Added "WEBTRIX".
+2025-07-08 21:07:16,690 - INFO - Scraper: Added "MEDIA POSTGOO".
+2025-07-08 21:07:20,344 - INFO - Scraper: Added "CYBRFORGE".
+2025-07-08 21:07:29,493 - INFO - Scraper: Added "CODEPULSE ST STUDIO".
+2025-07-08 21:07:35,257 - INFO - Scraper: Added "DYNAAS".
+2025-07-08 21:07:39,200 - INFO - Scraper: Added "BETA, SOFTWARE DEVELOPMENT".
+2025-07-08 21:07:46,388 - INFO - Scraper: Added "HOSTINO".
+2025-07-08 21:07:54,329 - INFO - Scraper: Added "WCM MARKETING".
+2025-07-08 21:07:59,296 - INFO - Scraper: Added "FRDISI".
+2025-07-08 21:08:03,402 - INFO - Scraper: Added "SM VALLEY".
+2025-07-08 21:08:10,282 - INFO - Scraper: Added "M² Square Meter".
+2025-07-08 21:08:15,460 - INFO - Scraper: Added "MentorClass Academy".
+2025-07-08 21:08:19,130 - INFO - Scraper: Added "HOOKED DIGITAL".
+2025-07-08 21:08:22,504 - INFO - Scraper: Added "Coalition Marocaine pour l’Eau « COALMA »".
+2025-07-08 21:08:25,801 - INFO - Scraper: Added "MOGIFY AGENCY".
+2025-07-08 21:08:29,169 - INFO - Scraper: Added "REDIA MAROC SAS".
+2025-07-08 21:08:32,173 - INFO - Scraper: Added "WE DO MARKETING".
+2025-07-08 21:08:35,119 - INFO - Scraper: Added "ASK IMPACT".
+2025-07-08 21:08:38,187 - INFO - Scraper: Added "1755 DEV".
+2025-07-08 21:08:41,496 - INFO - Scraper: Added "ALYA PAY".
+2025-07-08 21:08:44,549 - INFO - Scraper: Added "CYKLE".
+2025-07-08 21:08:48,057 - INFO - Scraper: Added "Nexotek".
+2025-07-08 21:08:51,154 - INFO - Scraper: Added "Wise Systems WS".
+2025-07-08 21:08:54,781 - INFO - Scraper: Added "CARREFOUR ANNUAIRE MAROC".
+2025-07-08 21:08:58,116 - INFO - Scraper: Added "ISNADWARE".
+2025-07-08 21:09:01,922 - INFO - Scraper: Added "SHOPYADS AGENCY".
+2025-07-08 21:09:05,534 - INFO - Scraper: Added "NHANCIT".
+2025-07-08 21:09:09,720 - INFO - Scraper: Added "RELAX AGENCY".
+2025-07-08 21:09:13,443 - INFO - Scraper: Added "DOCTIFY HEALTH".
+2025-07-08 21:09:17,108 - INFO - Scraper: Added "Dimacari".
+2025-07-08 21:09:20,889 - INFO - Scraper: Added "AM ORIENTATION".
+2025-07-08 21:09:24,207 - INFO - Scraper: Added "Agence Marocaine Multimédia Sous-Marine".
+2025-07-08 21:09:28,330 - INFO - 
 Scraper: SCRAPING FINISHED SUCCESSFULLY!
-2025-07-08 20:52:26,799 - INFO - Scraper: Data saved to json successfully!
+2025-07-08 21:09:30,806 - INFO - Scraper: Data saved to json successfully!
