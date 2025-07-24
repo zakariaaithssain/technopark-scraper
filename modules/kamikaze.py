@@ -1,12 +1,13 @@
-import logging as log
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-from config import XPATHS, REGEX
+
+import logging as log
 import re
-from base import BaseScraper
-from selenium import webdriver
+
+from config import XPATHS, REGEX
+from modules.base import BaseScraper
  
 
 

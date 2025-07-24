@@ -1,12 +1,13 @@
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
-import logging as log
-from config import XPATHS, FALLBACKXPATHS, DATAPATH
 from pandas import DataFrame
-from base import BaseScraper
-from kamikaze import Kamikaze
+
+import logging as log
 import os
-from config import LOG_OPTIONS
+
+from config import XPATHS, FALLBACKXPATHS, DATAPATH, LOG_OPTIONS
+from modules.base import BaseScraper
+
 
 
 class Scraper(BaseScraper):

@@ -5,12 +5,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
-import logging as log
-from config import XPATHS, CHROME_OPTIONS, LOG_OPTIONS
-import os 
 from abc import ABC
 
+import logging as log
+import os
 
+from config import XPATHS, CHROME_OPTIONS, LOG_OPTIONS
 
 
 
